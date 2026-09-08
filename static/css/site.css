@@ -4,6 +4,7 @@
    and script fonts drop into static/fonts/ when supplied; until then the stack
    falls back to Bodoni 72 / Bodoni Moda and Snell Roundhand / Pinyon Script. */
 
+@font-face{font-family:"Instrument Serif";src:url(/moonshine-site-a/static/fonts/InstrumentSerif-Regular.ttf) format("truetype");font-weight:400;font-display:swap}
 @font-face{font-family:"Barlow Semi Condensed";src:url(/moonshine-site-a/static/fonts/BarlowSemiCondensed-Regular.ttf) format("truetype");font-weight:400;font-display:swap}
 @font-face{font-family:"Barlow Semi Condensed";src:url(/moonshine-site-a/static/fonts/BarlowSemiCondensed-SemiBold.ttf) format("truetype");font-weight:600;font-display:swap}
 @font-face{font-family:"Barlow Semi Condensed";src:url(/moonshine-site-a/static/fonts/BarlowSemiCondensed-Bold.ttf) format("truetype");font-weight:700;font-display:swap}
@@ -16,7 +17,7 @@
   --cream:#f2e8d5;--cream-2:#dccfb8;--cream-dim:rgba(242,232,213,.72);
   --brass:#c9a15a;--tan:#946e56;--brown:#45251e;
   --line:rgba(242,232,213,.14);
-  --f-display:"Perandory Condensed","Preandory Condensed","Perandory","Bodoni 72","Bodoni Moda","Didot","Playfair Display",serif;
+  --f-display:"Perandory Condensed","Preandory Condensed","Perandory","Instrument Serif","Bodoni Moda","Bodoni 72","Didot",serif;
   --f-script:"Symphony","Snell Roundhand","Pinyon Script","Brush Script MT",cursive;
   --f-body:"Barlow Semi Condensed","Barlow SemiCondensed","Barlow","Helvetica Neue",Arial,sans-serif;
   --r:6px;
