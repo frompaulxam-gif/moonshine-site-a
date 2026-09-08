@@ -1,0 +1,222 @@
+[
+  {
+    "key": "visiting",
+    "title": "Visiting Moonshine",
+    "items": [
+      {
+        "q": "What are your opening times?",
+        "a": [
+          "Our usual opening hours are Thursday from 7pm, Friday from 6pm and Saturday from 4pm. Bank Holiday Sundays: open on selected dates.",
+          "Opening hours can vary for special events and bank holidays, so we recommend checking our socials for the latest updates before you visit."
+        ]
+      },
+      {
+        "q": "Is Moonshine an 18+ venue?",
+        "a": [
+          "Yes. Moonshine is strictly 18+.",
+          "We operate a Challenge 25 policy, so if you're lucky enough to look under 25, please bring valid photo ID with you. No ID can mean no entry, so don't leave it at home."
+        ]
+      },
+      {
+        "q": "Is there a dress code?",
+        "a": [
+          "Yes. Moonshine has a smart dress code - think dressed for a good night out.",
+          "And if you fancy embracing a little 1920s glamour, you'll be in very good company.",
+          "We don't allow hoodies, baseball caps, sportswear, sports trainers or similar casual attire. If you're unsure, get in touch with us before your visit."
+        ]
+      },
+      {
+        "q": "Is there a bag policy?",
+        "a": [
+          "Small bags are welcome, including handbags, purses and clutch bags up to A4 size.",
+          "Backpacks and sports bags aren't permitted. For everyone's safety, our team also reserves the right to search bags on entry or exit."
+        ]
+      },
+      {
+        "q": "Can I smoke or vape at Moonshine?",
+        "a": [
+          "Smoking and vaping aren't permitted inside Moonshine.",
+          "There is a space directly outside the front of the venue where you're welcome to smoke or vape during your visit."
+        ]
+      },
+      {
+        "q": "Is Moonshine accessible?",
+        "a": [
+          "Yes. An accessible lift is available at the venue.",
+          "When you arrive, speak to a member of our door team at the main entrance and they'll be happy to assist you."
+        ]
+      }
+    ]
+  },
+  {
+    "key": "bookings",
+    "title": "Bookings & Tables",
+    "items": [
+      {
+        "q": "Do I need to book?",
+        "a": [
+          "Walk-ins are always welcome, but if you have your heart set on a particular area of Moonshine, we recommend booking ahead - especially on Friday and Saturday nights.",
+          "Reserving a table guarantees your seating and means you can settle in and enjoy the night without leaving it to chance."
+        ],
+        "link": {"label": "Book a table", "url": "/book-a-table/"}
+      },
+      {
+        "q": "Is there a charge to reserve a table?",
+        "a": [
+          "Entry to Moonshine and our regular live entertainment is free, so you're always welcome to join us without a reservation.",
+          "If you'd like to guarantee your space, tables can be reserved in advance for a booking fee, giving you guaranteed seating and table service throughout your visit."
+        ],
+        "link": {"label": "Book a table", "url": "/book-a-table/"}
+      }
+    ]
+  },
+  {
+    "key": "whats-on",
+    "title": "What's On",
+    "items": [
+      {
+        "q": "What time do the live music and DJs start?",
+        "a": [
+          "The night builds as we go.",
+          "Live performances in the Theatre usually begin between 9pm and 9.30pm, while our DJs typically start from around 8pm and keep things moving throughout the evening.",
+          "Come down earlier for a drink, find your table and settle in before the entertainment begins.",
+          "Performance times can vary, so take a look at our What's On page for the latest line-up and event details."
+        ],
+        "link": {"label": "See what's on", "url": "/whats-on/"}
+      },
+      {
+        "q": "Do I have to pay to see the live entertainment?",
+        "a": [
+          "Our regular live music and entertainment is free to enjoy - simply come in and join us.",
+          "Some special events may be ticketed, so always check the individual event listing on our What's On page before visiting."
+        ]
+      },
+      {
+        "q": "Where should I book if I want to watch the live performance?",
+        "a": [
+          "For the best view of the action, book a table in our Theatre.",
+          "A Theatre table guarantees you'll be able to see the performance, so you can settle in, order your drinks and enjoy the show from your seat."
+        ],
+        "link": {"label": "Book a Theatre table", "url": "/book-a-table/"}
+      }
+    ]
+  },
+  {
+    "key": "brunch",
+    "title": "Bottomless Brunch",
+    "items": [
+      {
+        "q": "When is Bottomless Brunch?",
+        "a": [
+          "Bottomless Brunch starts at 4pm on selected Saturdays.",
+          "Check our Bottomless Brunch page for upcoming dates and availability."
+        ],
+        "link": {"label": "Bottomless Brunch dates", "url": "/bottomless-brunch-leicester/"}
+      },
+      {
+        "q": "What's included in Bottomless Brunch?",
+        "a": [
+          "Settle in for 90 indulgent minutes of free-flowing drinks, grazing boards and live entertainment at Moonshine.",
+          "Your brunch includes bottomless prosecco, draught beer and soft drinks, plus your own make-your-own bubbly cocktail kit. If you fancy something extra, you'll also have the option to upgrade to premium cocktails on the day."
+        ]
+      },
+      {
+        "q": "What food is included?",
+        "a": [
+          "Each Bottomless Brunch includes one of our curated grazing boards. Choose from mixed meat & cheese, cheese, or vegan, served while you sit back and enjoy the live entertainment."
+        ]
+      },
+      {
+        "q": "How long is Bottomless Brunch?",
+        "a": [
+          "Your Bottomless Brunch experience lasts 90 minutes, with free-flowing drinks throughout your session."
+        ]
+      },
+      {
+        "q": "How much is Bottomless Brunch?",
+        "a": [
+          "Bottomless Brunch is £45 per person, including your grazing board, 90 minutes of bottomless drinks, bubbly cocktail kit and live entertainment.",
+          "Premium cocktail upgrades are also available on the day."
+        ]
+      },
+      {
+        "q": "How do I pay for Bottomless Brunch?",
+        "a": [
+          "Bottomless Brunch is paid in full when you book online. Your place is confirmed once payment has been completed."
+        ]
+      },
+      {
+        "q": "Is Bottomless Brunch 18+?",
+        "a": [
+          "Yes. Bottomless Brunch is strictly 18+.",
+          "We operate a Challenge 25 policy, so please bring valid photo ID with you."
+        ]
+      },
+      {
+        "q": "Do you cater for dietary requirements?",
+        "a": [
+          "Yes. If you have any specific dietary requirements, please let us know when making your booking so our team can prepare for your visit."
+        ]
+      },
+      {
+        "q": "Are vegan options available?",
+        "a": [
+          "Yes. A vegan grazing board is available - simply request this when making your booking."
+        ]
+      },
+      {
+        "q": "Is there live entertainment during Bottomless Brunch?",
+        "a": [
+          "Of course. This is Moonshine, after all.",
+          "Live entertainment is part of the Bottomless Brunch experience, giving you something to enjoy while the drinks flow and the grazing boards make their way around the table."
+        ]
+      }
+    ]
+  },
+  {
+    "key": "private-hire",
+    "title": "Private Hire",
+    "items": [
+      {
+        "q": "Can I hire a private area for a celebration?",
+        "a": [
+          "Absolutely. Moonshine offers spaces for private hire, whether you're planning a birthday, celebration, party, corporate event or something completely your own.",
+          "Head to our Private Hire page and tell us what you have in mind. Our team will be in touch to talk through the possibilities and help bring it together."
+        ],
+        "link": {"label": "Private hire", "url": "/private-hire-leicester/"}
+      }
+    ]
+  },
+  {
+    "key": "travel",
+    "title": "Travel & Location",
+    "items": [
+      {
+        "q": "Where is Moonshine?",
+        "a": [
+          "You'll find us at Moonshine, 91 High Street, Leicester, LE1 4JB. Right in the heart of Leicester city centre."
+        ],
+        "link": {"label": "Open in Maps", "url": "https://maps.app.goo.gl/tBHG6mCruWqSizTX6"}
+      },
+      {
+        "q": "Where can I park?",
+        "a": [
+          "The closest parking is Highcross Rooftop Car Park, just a short walk from Moonshine.",
+          "Other city centre parking options are also available nearby."
+        ]
+      },
+      {
+        "q": "How far is Moonshine from Leicester Railway Station?",
+        "a": [
+          "Leicester Railway Station is approximately a 15-minute walk from Moonshine, making us easy to reach if you're joining us from further afield."
+        ]
+      },
+      {
+        "q": "Can I get to Moonshine by bus?",
+        "a": [
+          "Yes. St Margaret's Bus Station is approximately a 10-minute walk away, with services connecting Leicester city centre and the surrounding areas."
+        ]
+      }
+    ]
+  }
+]

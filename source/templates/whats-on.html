@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% block body_class %}page-whats-on{% endblock %}
+{% block head %}
+<script type="application/ld+json">{{ itemlist_ld|safe }}</script>
+{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">What's On</p>
+    <h1 class="display-xl">Nights worth<br>stepping out for.</h1>
+    <div class="page-head__intro">
+      <p class="lede">Moonshine welcomes live singers, bands, vinyl DJs, performers and carefully chosen events into an intimate Leicester setting. Some nights are made for listening. Others are made for dancing. All of them are better experienced up close.</p>
+      <p>Explore the programme below, choose your night and reserve a table in the part of Moonshine that suits you.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" aria-labelledby="programme">
+  <h2 id="programme" class="visually-hidden">Upcoming events</h2>
+
+  <div class="toolbar" role="search">
+    <div class="chips" aria-label="Filter by type">
+      <button type="button" class="chip" data-filter-type="all" aria-pressed="true">All</button>
+      <button type="button" class="chip" data-filter-type="live" aria-pressed="false">Live Music</button>
+      <button type="button" class="chip" data-filter-type="dj" aria-pressed="false">DJs</button>
+      <button type="button" class="chip" data-filter-type="thursday" aria-pressed="false">Thursday Events</button>
+      <button type="button" class="chip" data-filter-type="brunch" aria-pressed="false">Bottomless Brunch</button>
+      <button type="button" class="chip" data-filter-type="special" aria-pressed="false">Special Events</button>
+    </div>
+    <div class="toolbar__right">
+      <label class="visually-hidden" for="f-q">Search artist or genre</label>
+      <input class="input" id="f-q" type="search" placeholder="Search artist or genre" data-filter-q>
+      <label class="visually-hidden" for="f-month">Jump to month</label>
+      <select class="select" id="f-month" data-filter-month>
+        <option value="all">All dates</option>
+        {% for mo in months %}<option value="{{ mo.key }}">{{ mo.label }}</option>{% endfor %}
+      </select>
+      <label class="visually-hidden" for="f-room">Room</label>
+      <select class="select" id="f-room" data-filter-room>
+        <option value="all">Any room</option>
+        {% for r in rooms %}<option value="{{ r.slug }}">{{ r.name }}</option>{% endfor %}
+      </select>
+      <div class="view" role="group" aria-label="View">
+        <button type="button" class="view__btn" data-view="grid" aria-pressed="true" title="Grid view">Grid</button>
+        <button type="button" class="view__btn" data-view="list" aria-pressed="false" title="List view">By date</button>
+      </div>
+    </div>
+  </div>
+
+  <p class="count" aria-live="polite"><span data-count>{{ events|length }} nights</span> coming up</p>
+
+  <div class="events" data-events>
+    {% set ns = namespace(month=None) %}
+    {% for e in events %}
+      {% if e.month_key != ns.month %}
+        {% set ns.month = e.month_key %}
+        <h2 class="month-head" data-month-head="{{ e.month_key }}">{{ e.month_label }}</h2>
+      {% endif %}
+      {{ m.event_card(e) }}
+    {% endfor %}
+  </div>
+
+  <p class="empty" data-empty hidden>Nothing is showing here just yet. Try another category or <a href="#news">join the mailing list</a> for new dates.</p>
+  <p class="center mt-2"><button type="button" class="btn btn--ghost" data-more hidden>Show more nights</button></p>
+</section>
+
+<section class="band band--ink" aria-labelledby="regulars">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The regulars</p>
+      <h2 id="regulars" class="display-l">Every week at Moonshine</h2>
+    </div>
+    <div class="series">
+      {% for s in venue.series %}
+      <article class="series__item">
+        <div class="media">{{ m.pic(s.image, sizes='(max-width:900px) 100vw, 25vw') }}</div>
+        <h3 class="display-s">{{ s.name }}</h3>
+        <p class="series__when">{{ s.when }} · {{ s.entry }}</p>
+        <p>{{ s['copy'] }}</p>
+        <a class="link" href="{{ s.cta_url }}">{{ s.cta_label }}</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if past %}
+<section class="band band--tight" aria-labelledby="recent">
+  <div class="wrap">
+    <div class="section-head section-head--row">
+      <div><p class="eyebrow">Recently at Moonshine</p><h2 id="recent" class="display-m">Nights we have already had</h2></div>
+    </div>
+    <ul class="past-list">
+      {% for e in past[:6] %}
+      <li><a href="{{ e.url }}"><span class="past-list__date">{{ e.date_short }}</span><span>{{ e.title }}</span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
+<section class="band band--red newsletter" id="news" aria-labelledby="news-h">
+  <div class="wrap wrap--narrow center">
+    <h2 id="news-h" class="display-l">Stay close to the secret.</h2>
+    <p class="lede center-block">New artists, special events and the nights you will want to know about - delivered occasionally, never noisily.</p>
+    <form class="form form--inline" data-stub novalidate>
+      <div class="form__fields">
+        <label><span class="visually-hidden">First name</span><input type="text" name="first" placeholder="First name" required autocomplete="given-name"></label>
+        <label><span class="visually-hidden">Last name</span><input type="text" name="last" placeholder="Last name" required autocomplete="family-name"></label>
+        <label><span class="visually-hidden">Email</span><input type="email" name="email" placeholder="Email address" required autocomplete="email"></label>
+        <button class="btn btn--cream" type="submit">Join the list</button>
+      </div>
+      <p class="form__msg" hidden tabindex="-1">You're on the list. Keep an eye on your inbox.</p>
+    </form>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}<script src="/static/js/whats-on.js" defer></script>{% endblock %}

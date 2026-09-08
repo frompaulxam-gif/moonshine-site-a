@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block body_class %}page-faqs{% endblock %}
+{% block head %}<script type="application/ld+json">{{ faq_ld|safe }}</script>{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Before you visit</p>
+    <h1 class="display-xl">Everything<br>worth knowing.</h1>
+    <div class="page-head__intro">
+      <p class="lede">From table bookings and opening hours to dress code, accessibility and private hire, find the practical details for your visit to Moonshine below.</p>
+      <p>Still need help? <a href="/contact/">Contact the team</a> and we will point you in the right direction.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap faq-layout">
+  <nav class="faq-nav" aria-label="FAQ sections">
+    <p class="eyebrow">Jump to</p>
+    <ul>{% for g in faqs %}<li><a href="#{{ g.key }}">{{ g.title }}</a></li>{% endfor %}</ul>
+  </nav>
+  <div class="faq-groups">
+    {% for g in faqs %}
+    <section id="{{ g.key }}" class="faq-group" aria-labelledby="{{ g.key }}-h">
+      <h2 id="{{ g.key }}-h" class="display-m">{{ g.title }}</h2>
+      {% for q in g['items'] %}
+      <details class="faq"{% if loop.first and g.key == 'visiting' %} open{% endif %}>
+        <summary>{{ q.q }}</summary>
+        <div class="faq__a">
+          {% for p in q.a %}<p>{{ p }}</p>{% endfor %}
+          {% if q.link %}<p><a class="link" href="{{ q.link.url }}">{{ q.link.label }}</a></p>{% endif %}
+        </div>
+      </details>
+      {% endfor %}
+    </section>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="band band--red center">
+  <div class="wrap wrap--narrow">
+    <h2 class="display-l">Ready to plan the night?</h2>
+    <p class="hero__actions">{{ m.btn('Book a Table', '/book-a-table/', 'cream') }} {{ m.btn("See What's On", '/whats-on/', 'ghost') }}</p>
+  </div>
+</section>
+{% endblock %}

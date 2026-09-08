@@ -1,0 +1,6 @@
+/* The two licensed brand fonts. Drop the files into static/fonts/ as
+   Perandory-Condensed.woff2 (or .otf) and Symphony.woff2 (or .otf) and
+   build.py links this sheet automatically. Until then the stack in site.css
+   falls back to Bodoni 72 / Bodoni Moda and Snell Roundhand / Pinyon Script. */
+@font-face{font-family:"Perandory Condensed";src:url(/static/fonts/Perandory-Condensed.woff2) format("woff2"),url(/static/fonts/Perandory-Condensed.otf) format("opentype");font-display:swap}
+@font-face{font-family:"Symphony";src:url(/static/fonts/Symphony.woff2) format("woff2"),url(/static/fonts/Symphony.otf) format("opentype");font-display:swap}

@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block body_class %}page-event{% endblock %}
+{% block head %}
+<script type="application/ld+json">{{ event_ld|safe }}</script>
+{% endblock %}
+
+{% block content %}
+{% set series = (venue.series | selectattr('key', 'equalto', e.series_key) | list | first) if e.series_key else none %}
+<section class="page-head page-head--event">
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/whats-on/">What's On</a> <span>/</span> <span aria-current="page">{{ e.title }}</span></nav>
+    <p class="eyebrow">{{ e.type_label }}{% if series %} · {{ series.name }}{% endif %}</p>
+    <h1 class="display-xl">{{ e.title }}</h1>
+    <ul class="meta-row">
+      <li><span class="meta-row__k">Date</span><time datetime="{{ e.iso_start }}">{{ e.date_label }}</time></li>
+      {% if e.time_label %}<li><span class="meta-row__k">From</span>{{ e.time_label }}</li>{% endif %}
+      {% if e.room_name %}<li><span class="meta-row__k">Room</span>{{ e.room_name }}</li>{% endif %}
+      <li><span class="meta-row__k">Entry</span>{% if e.entry == 'paid' %}{{ e.price }}{% elif e.entry == 'ticket' %}Free, ticket required{% else %}Free entry{% endif %}</li>
+    </ul>
+    {% if not e.is_past and e.status != 'cancelled' %}
+    <p class="page-head__cta"><a class="btn btn--red" href="{{ e.cta.url }}">{{ e.cta.label }}</a>{% if e.cta2 %} <a class="btn btn--ghost" href="{{ e.cta2.url }}">{{ e.cta2.label }}</a>{% endif %}</p>
+    {% endif %}
+    {% if e.is_past %}
+    <p class="notice">This event has passed. <a href="/whats-on/">See what's on next</a>.</p>
+    {% elif e.status == 'cancelled' %}
+    <p class="notice">This event has been cancelled. <a href="/whats-on/">See what's on instead</a>.</p>
+    {% elif e.status == 'sold_out' %}
+    <p class="notice">This event is sold out. <a href="/whats-on/">See what else is on</a>.</p>
+    {% elif e.status == 'tbc' %}
+    <p class="notice">Final details for this date are still being confirmed. Check back soon or <a href="#news">join the list</a>.</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="wrap event-hero">
+  <div class="media media--wide">{{ m.pic(e.image, e.image_alt, sizes='(max-width:1240px) 100vw, 1240px', priority=true) }}</div>
+</section>
+
+<section class="wrap event-body">
+  <div class="event-body__main">
+    <p class="lede">{{ e.blurb }}</p>
+    {% if series %}
+    <h2 class="display-m">{{ series.name }}</h2>
+    <p>{{ series['copy'] }}</p>
+    {% endif %}
+    <h2 class="display-m">Good to know</h2>
+    <ul class="checks">
+      <li>Moonshine is strictly 18+ with a Challenge 25 policy, so bring photo ID.</li>
+      {% if e.entry == 'free' %}<li>Entry and the live entertainment are free. Reserving a table guarantees your seat and adds table service.</li>{% endif %}
+      {% if e.entry == 'ticket' %}<li>Entry is free but ticketed. Secure your place through Fatsoma before the night.</li>{% endif %}
+      {% if e.entry == 'paid' %}<li>Booked and paid in full online. Your place is confirmed once payment has been completed.</li>{% endif %}
+      {% if e.room == 'theatre' %}<li>For the best view of the performance, book a table in the Theatre.</li>{% endif %}
+      <li>Smart dress code. No hoodies, caps, sportswear or sports trainers. <a href="/faqs/">Read the full dress code</a>.</li>
+    </ul>
+  </div>
+  <aside class="event-body__aside">
+    <div class="detail-card">
+      <p class="eyebrow">{{ e.date_label }}</p>
+      <p class="display-s">{{ e.title }}</p>
+      <dl class="detail-card__list">
+        {% if e.time_label %}<div><dt>Starts</dt><dd>{{ e.time_label }}</dd></div>{% endif %}
+        {% if e.room_name %}<div><dt>Where</dt><dd>{{ e.room_name }}, Moonshine, 91 High Street, Leicester</dd></div>{% endif %}
+        {% if e.genre_line %}<div><dt>Style</dt><dd>{{ e.genre_line }}</dd></div>{% endif %}
+        <div><dt>Entry</dt><dd>{% if e.entry == 'paid' %}{{ e.price }}{% elif e.entry == 'ticket' %}Free, ticket required{% else %}Free entry{% endif %}</dd></div>
+      </dl>
+      {% if not e.is_past and e.status != 'cancelled' %}
+      <p><a class="btn btn--red btn--block" href="{{ e.cta.url }}">{{ e.cta.label }}</a></p>
+      {% if e.cta2 %}<p><a class="btn btn--ghost btn--block" href="{{ e.cta2.url }}">{{ e.cta2.label }}</a></p>{% endif %}
+      {% endif %}
+      {% if e.artist_ig %}<p class="small"><a href="{{ e.artist_ig }}" rel="noopener">{{ e.artist }} on Instagram</a></p>{% endif %}
+    </div>
+  </aside>
+</section>
+
+{% if related %}
+<section class="band band--ink" aria-labelledby="related">
+  <div class="wrap">
+    <div class="section-head section-head--row">
+      <div><p class="eyebrow">More like this</p><h2 id="related" class="display-l">Related nights</h2></div>
+      <a class="link" href="/whats-on/">See everything</a>
+    </div>
+    <div class="events events--3">
+      {% for r in related %}{{ m.event_card(r) }}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

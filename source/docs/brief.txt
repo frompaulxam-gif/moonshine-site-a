@@ -1,0 +1,812 @@
+
+MOONSHINE LEICESTER
+Website Strategy &Content Specification
+Agency-ready brief for the new Moonshine website
+Prepared August 2026
+
+The central idea
+Make the website feel like the first step through the door: warm, cinematic, intriguing and unmistakably Moonshine. The experience should lead; practical information and booking actions should always remain easy to find.
+
+Scope
+Full website audit, positioning, sitemap, user journeys, SEO framework, page-by-page structure, finished website copy, booking language, content models, developer notes and launch checks.
+Source basis
+Existing Moonshine website reviewed on 5 August 2026, the supplied Moonshine Social Guidelines, and the 58th Street inspiration website. Any operational detail that conflicts across the current website is marked for confirmation before launch.
+
+Contents
+1. Executive summary
+2. Source audit and confirmed facts
+3. Brand and positioning strategy
+4. Audience and user journeys
+5. Recommended sitemap and navigation
+6. SEO and content architecture
+7. Home page specification and copy
+8. What’s On page specification and copy
+9. Bottomless Brunch page specification and copy
+10. Private Hire page specification and copy
+11. Host Your Event page specification and copy
+12. FAQ page introduction and structure
+13. Contact page specification and copy
+14. About Moonshine page
+15. Table booking journey
+16. Footer, forms and system copy
+17. Photography and motion direction
+18. Technical SEO and measurement
+19. Content governance and launch checklist
+
+1. Executive summary
+Moonshine already has the ingredients of a distinctive Leicester venue: an atmospheric speakeasy setting, live entertainment, multiple rooms, table service, bottomless brunch and flexible event spaces. The new website should stop presenting these as disconnected offers and instead build one clear proposition: Moonshine is a different kind of night out in Leicester.
+The new site should be simple, visual and easy to navigate, but not sparse. Each main page needs enough useful, indexable content to answer guest questions, support search visibility and move people towards a booking or enquiry.
+Positioning statement
+Moonshine is Leicester’s iconic speakeasy bar - a hidden, late-night world of cocktails, live music, intimate performances and memorable gatherings, all in the heart of the city centre.
+
+Primary objectives
+Increase table bookings without making the venue feel ticketed or inaccessible.
+Improve discovery for searches around Leicester nightlife, live music, speakeasy bars, bottomless brunch and private hire.
+Make the events programme easier to browse and easier for the team to update.
+Generate qualified private hire and public event enquiries.
+Give the agency a precise content and UX framework, reducing interpretation and revision time.
+Experience principles
+Atmosphere first
+Lead with video, rich photography, performers, guests and spatial details rather than long explanatory copy.
+Clarity underneath
+Opening hours, location, access, booking terms and event details must be easy to find.
+Fewer words, more weight
+Use short, confident lines for campaign copy, then practical detail where users need reassurance.
+Soft conversion
+Invite people to reserve, discover or enquire. Avoid hard-sell language, shouting and urgency for its own sake.
+Local relevance
+Use Leicester naturally in headings, page titles, body copy, event information and location content.
+
+
+2. Source audit and confirmed facts
+The current website was reviewed page by page. The following information is supported by the live site as of 5 August 2026. It should be treated as working source material, not assumed permanently correct.
+Confirmed venue details
+Venue name
+Moonshine
+Positioning used currently
+1920s-style / 1920s-inspired speakeasy bar in Leicester city centre
+Address
+91 High Street, Leicester, LE1 4JB
+Telephone
+07566 870558
+Age policy
+18+ only; guests should have ID ready
+Entry and entertainment
+Current home page states entry and entertainment are free
+Table bookings
+Paid reservations are offered to guarantee a table / preferred seating and support an elevated experience
+Core areas referenced
+Theatre Stage, Main Bar, Sports Bar and Members Bar
+
+Opening hours 
+Thursday 7pm – 12am
+Friday 6pm – 3am
+Saturday 4pm – 2am 
+Bottomless Brunch facts currently published
+Price: £45 per person.
+Duration: 90 minutes.
+Drinks listed: bottomless prosecco, draught beer and soft drinks.
+Each guest receives a make-your-own bubbly cocktail kit.
+Food: curated charcuterie boards with mixed meat and cheese, cheese-only or vegan options.
+Live entertainment is included.
+Premium cocktail upgrades are available on the day.
+Guests are asked to provide dietary requirements when booking.
+Current dress and conduct information
+The existing home page includes a detailed dress code covering elegant attire, no hoodies, no sportswear or sports trainers, no baseball hats, no large bags or backpacks, respectful conduct and management’s right to refuse entry. The wording should be checked operationally before transfer to the FAQ. The new website should not imply that 1920s costume is mandatory unless that is genuinely enforced.
+Current content and technical issues
+Opening hours conflict across pages.
+The old WordPress “Hello world!” post and Uncategorized archive are indexable and should be removed or noindexed.
+Seasonal New Year content appears on evergreen pages and should be managed through an event system or seasonal landing page.
+The current What’s On page does not provide a complete, structured programme.
+The venue hire URL was not reliably retrievable during review; relevant venue descriptions were therefore cross-checked against the Table Bookings page and the user’s instruction to retain only Speakeasy Bar, Members Bar and Sports Bar.
+
+3. Brand and positioning strategy
+The supplied social guidelines define the voice as confident, cultured and inviting. They recommend fewer words, more weight; no shouting; minimal exclamation marks; and copy that creates curiosity rather than demanding attention. The website should follow the same system, while allowing more practical detail than social captions.
+Recommended brand promise
+A night at Moonshine feels discovered, not manufactured.
+Messaging pillars
+The hidden world
+A central Leicester venue that feels removed from the ordinary outside it.
+The performance
+Live singers, bands, DJs, spoken word and curated events experienced up close.
+The hospitality
+Cocktails, table service, reserved spaces and a team that helps guests settle into the night.
+The occasion
+A place for dates, celebrations, groups, brunches, private events and creative collaborations.
+The city
+Proudly Leicester: distinctive enough to draw visitors, rooted enough to feel like part of the city.
+
+Tone rules for website copy
+Use short atmospheric headlines followed by clear, useful supporting copy.
+Prefer “reserve”, “discover”, “step inside” and “plan your night” over aggressive sales language.
+Avoid generic claims such as “the best night out” unless supported by an award or review.
+Do not overuse 1920s language or costume references. The mood should feel timeless, not themed.
+Use dashes, not em dashes, in line with the established content preference.
+Avoid emojis on the website.
+Use “Leicester” naturally, not repetitively.
+Inspiration translated from 58th Street
+The inspiration site succeeds through immersive first-person storytelling, large-scale visual moments, highly specific experience descriptions, social proof, concise booking information and repeated but well-timed booking prompts. Moonshine should borrow the confidence and cinematic pacing, not the level of theatrical fiction or ticketed-dining language. [https://58thstreet.co.uk/]
+
+4. Audience and user journeys
+Night-out planners
+Looking for somewhere distinctive for Friday or Saturday drinks, live music or a date night.
+Event-led visitors
+Already interested in a named artist, DJ, brunch date or special event and ready to reserve.
+Celebration groups
+Planning birthdays, hen parties, reunions or group occasions and needing confidence around seating and service.
+Private hire buyers
+Comparing Leicester venues for corporate, social or seasonal events.
+Creators and promoters
+Looking for a collaborative venue for public-facing events, particularly Thursday evenings.
+Visitors to Leicester
+Searching by location and needing address, travel, opening hours and a clear sense of what Moonshine is.
+
+Priority journeys
+Discover Moonshine through search or social - understand the atmosphere - browse What’s On - reserve a table.
+Land on a specific event - check date, artist, room and style - reserve through ResDiary.
+Land on Bottomless Brunch - understand inclusions and price - book or enquire.
+Land on Private Hire - compare spaces - view gallery and key features - submit a qualified enquiry.
+Land on Host Your Event - feel encouraged - understand suitable concepts and available support - pitch an idea.
+Search for practical information - reach FAQ or Contact - find the answer without contacting the team.
+Global conversion elements
+Persistent “Book a Table” button in the header.
+Mobile sticky booking button.
+Upcoming event preview on the home page.
+Clear distinction between free entry and paid table reservations.
+Private hire enquiry CTA repeated after venue spaces and gallery.
+Contact details and opening hours in the footer.
+
+5. Recommended sitemap and navigation
+Primary navigation
+Home  |  What’s On  |  Bottomless Brunch  |  Private Hire  |  Host Your Event  |  FAQs  |  Contact
+Utility actions
+Book a Table  |  Instagram  |  Newsletter sign-up
+About Page
+About Moonshine should be included either in the main menu or footer. It provides brand depth, local relevance and a natural home for the venue story, without making the home page work too hard.
+Suggested URL structure
+Home
+/
+What’s On
+/whats-on/
+Event detail
+/whats-on/event-name-date/
+Bottomless Brunch
+/bottomless-brunch-leicester/
+Private Hire
+/private-hire-leicester/
+Host Your Event
+/host-your-event/
+FAQs
+/faqs/
+Contact
+/contact/
+About
+/about-moonshine/
+Table bookings
+/book-a-table/
+
+Keep event architecture scalable
+The website should not rely on manually designed posters pasted into a page. Events need structured fields for date, start time, artist, genres, room, short description, image, booking link, status and optional ticket information.
+
+
+6. SEO and content architecture
+Core topic clusters
+Speakeasy and cocktails
+speakeasy bar Leicester; hidden bar Leicester; cocktail bar Leicester; bars in Leicester city centre
+Live entertainment
+live music Leicester; live music bar Leicester; Leicester events; DJs Leicester; jazz bar Leicester
+Brunch
+bottomless brunch Leicester; live music bottomless brunch Leicester; Saturday brunch Leicester
+Private events
+private hire Leicester; venue hire Leicester; party venue Leicester; corporate event venue Leicester
+Local discovery
+things to do in Leicester; Leicester nightlife; weekend events Leicester; date night Leicester
+
+SEO principles
+One primary search intent per page.
+One clear H1 per page.
+Event copy should contain real performer, genre, date, room and city information.
+Use descriptive image file names and alt text based on what is visibly shown.
+Link contextually between events, bookings, brunch, private hire and contact.
+Do not place important copy only inside images or video.
+Keep event URLs live after the event where useful, marking them as past and linking to current listings.
+Add LocalBusiness / BarOrPub, Event and FAQ structured data where valid.
+
+7. Home page specification and copy
+SEO specification
+SEO title
+Moonshine Leicester | Speakeasy Bar, Live Music & Cocktails
+Meta description
+Step inside Moonshine, Leicester’s iconic speakeasy bar for cocktails, live music, DJs, bottomless brunch, table bookings and private hire.
+Recommended URL
+/
+Primary search intent
+Speakeasy bar Leicester / Leicester nightlife
+
+Hero video
+Video direction: a 10-20 second silent loop that moves from exterior or doorway into warm interior details, a performer mid-song, cocktails, dancing and an intimate crowd reaction. Avoid a generic club montage. Always include a static mobile fallback image and reduced-motion alternative.
+Home Page
+Leicester’s Iconic Speakeasy Bar
+Leave ordinary at the door...
+Hidden in the heart of Leicester, Moonshine brings together cocktails, live music and late-night atmosphere in a setting made for memorable nights.
+Primary CTA: BOOK A TABLE    Secondary CTA: SEE WHAT’S ON
+Primary image blocks
+What’s On
+Live music, vinyl DJs and nights worth discovering.
+CTA: EXPLORE WHAT’S ON
+Bottomless Brunch
+Great food, free-flowing drinks and live entertainment.
+CTA: DISCOVER BRUNCH
+Private Hire
+From birthdays to corporate celebrations, make Moonshine yours.
+CTA: EXPLORE PRIVATE HIRE
+Booking section
+Your table is waiting.
+Entry to Moonshine and our regular live entertainment is free. 
+Table reservations carry a booking charge, giving you a guaranteed place to settle in, table service throughout your visit and the confidence that your night is planned before you arrive.
+Walk-ins are welcome, subject to capacity. For live performances and busy weekends, booking ahead is recommended.
+Wording note
+This sells the value of a reservation without suggesting that guests must pay simply to enter. The agency should place the ResDiary widget next to this.
+
+Secondary image blocks
+Host Your Event
+Have an idea? Let's bring it to life.
+CTA: BRING US YOUR IDEA
+FAQs
+Everything you need to know before you visit.
+CTA: PLAN YOUR VISIT
+Contact Us
+Find us, get in touch or plan your next visit.
+CTA: FIND US
+Newsletter banner
+Stay close to the secret.
+New artists, special events and the nights you will want to know about - delivered occasionally, never noisily.
+CTA: JOIN THE LIST
+Build notes
+Use full-width video with text-safe overlay and strong contrast.
+Image blocks should be editorial and atmospheric, not graphic event posters.
+On mobile, stack cards in the order shown and keep booking CTA visible.
+Include a small “Next at Moonshine” strip if event data is available.
+Do not auto-play video with sound.
+
+8. What’s On page specification and copy
+SEO specification
+SEO title
+What’s On at Moonshine | Live Music & Events Leicester
+Meta description
+Discover live music, DJs, performers and special events at Moonshine Leicester. Explore upcoming dates and reserve your table.
+Recommended URL
+/whats-on/
+Primary search intent
+Live music Leicester / Leicester events
+
+Layout inspo: https://www.ronniescotts.co.uk/find-a-show?page=3 
+
+WHAT’S ON
+Nights worth stepping out for.
+Moonshine welcomes live singers, bands, vinyl DJs, performers and carefully chosen events into an intimate Leicester setting. Some nights are made for listening. Others are made for dancing. All of them are better experienced up close.
+Explore the programme below, choose your night and reserve a table in the part of Moonshine that suits you.
+Filters
+Recommended filters: All | Live Music | DJs | Thursday Events | Bottomless Brunch | Special Events. Optional room filter: Theatre | Speakeasy Bar | Members Bar | Sports Bar.
+Event card content model
+Image
+Warm, high-quality artist or event image. Avoid text-heavy posters as the only image.
+Date
+Day, date and month in a consistent format.
+Artist / event name
+Clear title as the card heading.
+Location
+Theatre, Speakeasy Bar, Members Bar or Sports Bar.
+Style line
+Two to four genres or a concise event type.
+Holding description
+A brief introduction that tells guests what the artist or event feels like, not simply what it is.
+CTA
+BOOK A TABLE or BUY A TICKET, depending on the event model.
+
+Holding copy templates
+Live artist
+[ARTIST NAME] brings [GENRES / INFLUENCES] to the [ROOM] for a night of [MOOD OR EXPERIENCE]. Expect [REPERTOIRE, STYLE OR DISTINCTIVE DETAIL], performed close enough to feel every note.
+DJ
+[DJ NAME] takes over the [ROOM] with a set moving through [GENRES]. Settle in early, stay late and let the records shape the night.
+Public event
+[EVENT NAME] brings [FORMAT / CONCEPT] to Moonshine. Join us for [WHAT HAPPENS], followed by [OPTIONAL MUSIC / AFTER-EVENT DETAIL].
+Empty and past states
+No events matching that filter: “Nothing is showing here just yet. Try another category or join the mailing list for new dates.”
+Past event: retain useful artist content, label clearly as “This event has passed”, then link to current What’s On listings.
+Build notes
+Build events as structured CMS entries, not freeform page sections.
+Event cards must expose text to search engines.
+Allow the team to mark events sold out, cancelled, free-entry or table-booking only.
+Each event detail page should include date, start time, room, accessibility / age information, artist copy, image, booking CTA and related events.
+Connect every “Book a Table” CTA to the relevant ResDiary date where technically possible.
+
+9. Bottomless Brunch page specification and copy
+SEO specification
+SEO title
+Bottomless Brunch Leicester | Live Entertainment at Moonshine
+Meta description
+Book Moonshine Bottomless Brunch in Leicester - 90 minutes of prosecco, draught beer and soft drinks, a bubbly cocktail kit, grazing boards and live entertainment for £45 per person.
+Recommended URL
+/bottomless-brunch-leicester/
+Primary search intent
+Bottomless brunch Leicester
+
+BOTTOMLESS BRUNCH
+Bottomless Brunch, the Moonshine way.
+Step inside for ninety minutes of free-flowing drinks, curated grazing boards and live entertainment in one of Leicester’s most atmospheric venues.
+Made for birthdays, catch-ups and afternoons that deserve to become evenings, Moonshine Bottomless Brunch is £45 per person and takes place on selected Saturdays.
+CTA: BOOK BOTTOMLESS BRUNCH
+What is included
+90 minutes of bottomless prosecco, draught beer and soft drinks.
+Your own make-your-own bubbly cocktail kit.
+A curated grazing board - choose mixed meat and cheese, cheese-only or vegan.
+Live entertainment throughout your visit.
+The option to upgrade to premium cocktails on the day.
+Good to know
+Please tell us about dietary requirements when booking so the team can prepare the right board for your table. Availability, sitting times and booking terms should be displayed next to the booking widget and confirmed during checkout.
+Suggested booking reassurance
+Your booking is for a timed 90-minute bottomless experience. Please arrive promptly so you can enjoy the full sitting. The venue’s 18+ and ID policies apply.
+Gallery section
+Use a mix of drinks, grazing boards, performer moments and groups enjoying the experience. Avoid showing food or drinks that are not included unless captions make the distinction clear.
+Bottomless Brunch FAQs - holding questions
+What drinks are included?
+What food options are available?
+Can you cater for dietary requirements?
+How long is the sitting?
+Is the brunch suitable for large groups?
+What time should we arrive?
+Can we stay at Moonshine after brunch?
+What is the cancellation or amendment policy?
+Operational confirmation needed
+The current website provides the inclusions and price above, but does not expose full booking terms in the page crawl. The Moonshine team should supply cancellation, lateness, group-size, service and responsible-drinking terms before launch.
+
+Build notes
+Place the booking widget high on the page and repeat the CTA after inclusions.
+Use Product / Offer structured data only if technically valid and kept current.
+Make the £45 price prominent but editable in the CMS.
+Do not describe the grazing boards as bottomless.
+
+10. Private Hire page specification and copy
+SEO specification
+SEO title
+Private Hire Leicester | Event Spaces at Moonshine
+Meta description
+Hire Moonshine Leicester for birthdays, corporate events, celebrations and private parties. Explore the Speakeasy Bar, Members Bar and Sports Bar.
+Recommended URL
+/private-hire-leicester/
+Primary search intent
+Private hire Leicester / venue hire Leicester
+
+PRIVATE HIRE
+Make the room part of the story.
+Some occasions deserve more than an ordinary function space. Hidden in Leicester city centre, Moonshine offers three distinctive areas for celebrations, company gatherings, launches, parties, photoshoots, video shoots and private events.
+From the atmosphere and drinks to entertainment and room layout, our team will help shape the setting around the occasion.
+CTA: ENQUIRE ABOUT PRIVATE HIRE
+The Speakeasy Bar
+Moonshine at its most recognisable - warm, intimate and made for evenings with atmosphere. The Speakeasy Bar is suited to celebrations, drinks receptions, live entertainment and events that deserve a distinctive backdrop.
+Suggested feature fields: capacity, seated capacity, standing capacity, room size, stage / performance access, AV, accessibility
+The Members Bar
+A more private, refined room with comfortable booth seating and a tucked-away feel. The Members Bar works well for smaller celebrations, networking, team gatherings, hosted drinks and occasions that benefit from their own space.
+Suggested feature fields: capacity, seated capacity, standing capacity, room size, stage / performance access, AV, accessibility
+The Sports Bar
+A relaxed space with a fully stocked bar, comfortable booths, large screens, a darts board and pool table. Ideal for sports screenings, informal company socials, group celebrations and private gatherings with a more casual pace.
+Suggested feature fields: capacity, seated capacity, standing capacity, room size, stage / performance access, AV, accessibility
+Events we welcome
+Birthday celebrations and milestone occasions.
+Corporate parties and team socials.
+Networking and client events.
+Christmas and seasonal parties.
+Video and photoshoots.
+Launches, showcases and receptions.
+Private live music and entertainment nights.
+Sports screenings and group gatherings.
+Your event, shaped with us
+Tell us the date, guest numbers, preferred space and the kind of atmosphere you want to create. The team will come back to you with availability and the most suitable options for your event.
+CTA: START YOUR ENQUIRY
+Private hire enquiry form
+Required fields
+Name, email, phone, event type, preferred date, estimated guest count, preferred room, message.
+Useful optional fields
+Company, flexible dates, seated / standing preference, entertainment, AV, budget range.
+Consent
+Clear marketing opt-in separate from the operational enquiry consent.
+Confirmation
+Set response expectations without promising a time the team cannot consistently meet.
+
+Scope change from current site
+Remove Merchants Yard. The new page should present only the Speakeasy Bar, Members Bar and Sports Bar as requested. Final capacities, hire fees, minimum spends, available hours and package details were not confirmed in the source material and must be supplied by the venue team.
+
+Build notes
+Give each room a short gallery and a practical fact panel.
+Do not publish placeholder capacities.
+Allow downloadable brochure upload later, but keep core information on the page for SEO and accessibility.
+Add enquiry conversion tracking.
+
+11. Host Your Event page specification and copy
+SEO specification
+SEO title
+Host an Event at Moonshine Leicester | Creative Venue Collaboration
+Meta description
+Bring your public event idea to Moonshine Leicester. We welcome live music, spoken word, comedy, workshops, paint and sip events, launches and new concepts.
+Recommended URL
+/host-your-event/
+Primary search intent
+Host an event Leicester / event venue collaboration
+
+HOST YOUR EVENT
+Bring us the idea.
+Some of Moonshine’s best nights begin with someone asking, “What if we tried this?”
+If you have a public-facing event you want to bring to life, we would love to hear it. Music, spoken word, comedy, creative workshops, paint and sip evenings, community gatherings, launches and ideas that do not fit neatly into a category are all welcome.
+Thursday evenings are particularly well suited to new concepts and collaborations, giving promoters, performers and organisers space to build something distinctive with the Moonshine team.
+CTA: PITCH YOUR EVENT
+Ideas that belong here
+Live music and acoustic sessions.
+Open mic, spoken word and poetry.
+Comedy, cabaret and performance.
+Paint and sip evenings and creative workshops.
+Listening parties and DJ concepts.
+Book, product and creative launches.
+Networking and community events.
+Quizzes, screenings and participatory nights.
+A strong idea we have not listed yet.
+How collaboration works
+1-Tell us the idea - the format, audience, preferred date and what makes the event special.
+2-We consider the fit - room, timing, capacity, technical needs and how Moonshine can support it.
+3-We shape the plan together - responsibilities, ticketing, promotion, production and hospitality.
+4-We open the doors - with a clear guest journey and a shared plan for the night.
+What to include in your pitch
+A concise description of the event.
+Your preferred date or date range.
+Expected audience size.
+Previous examples, audience links or performer information, where relevant.
+Technical, staging or furniture requirements.
+Whether the event is free, ticketed or commercially sponsored.
+What support you are seeking from Moonshine.
+Closing copy
+You do not need to arrive with every detail solved. Start with the idea, and we will tell you whether Moonshine can be the right home for it.
+CTA: SHARE YOUR IDEA
+Build notes
+Use a distinct enquiry form from private hire so leads can be routed correctly.
+Include upload or URL fields for decks, videos or previous event examples.
+Add a checkbox confirming the applicant has authority to use submitted materials.
+Avoid promising acceptance or partnership.
+
+12. FAQ page introduction and structure
+SEO specification
+SEO title
+Moonshine Leicester FAQs | Bookings, Dress Code, Access & More
+Meta description
+Plan your visit to Moonshine Leicester with answers about bookings, opening hours, dress code, age policy, accessibility, bottomless brunch and private hire.
+Recommended URL
+/faqs/
+Primary search intent
+Moonshine Leicester FAQs
+
+BEFORE YOU VISIT
+Everything worth knowing.
+From table bookings and opening hours to dress code, accessibility and private hire, find the practical details for your visit to Moonshine below.
+Still need help? Contact the team and we will point you in the right direction.
+Recommended FAQ groups
+Visiting Moonshine
+Opening hours, address, age policy, ID, dress code, bags, last entry, accessibility, smoking area.
+Bookings and tables
+Walk-ins, booking charges, table duration, late arrivals, deposits, amendments, cancellations, room selection.
+What’s On
+Free entry, ticketed events, performance times, artist changes, seating views.
+Bottomless Brunch
+Inclusions, timings, dietary needs, group bookings, responsible service, cancellation terms.
+Private Hire
+Capacities, pricing approach, availability, catering, entertainment, AV, site visits.
+Travel and location
+Parking, nearest bus stops, railway station, taxis, step-free route where applicable.
+
+Copy governance
+FAQs
+Everything you need to know before joining us at Moonshine.
+From bookings and live entertainment to Bottomless Brunch, private hire and getting here, you'll find answers to our most frequently asked questions below.
+If you can't find what you're looking for, our team is always happy to help.
+Visiting Moonshine
+What are your opening times?
+Our usual opening hours are:
+Thursday: From 7pmFriday: From 6pmSaturday: From 4pmBank Holiday Sundays: Open on selected dates
+Opening hours can vary for special events and bank holidays, so we recommend checking our socials for the latest updates before you visit.
+Is Moonshine an 18+ venue?
+Yes. Moonshine is strictly 18+.
+We operate a Challenge 25 policy, so if you're lucky enough to look under 25, please bring valid photo ID with you. No ID can mean no entry, so don't leave it at home.
+Is there a dress code?
+Yes. Moonshine has a smart dress code - think dressed for a good night out.
+And if you fancy embracing a little 1920s glamour, you'll be in very good company.
+We don't allow hoodies, baseball caps, sportswear, sports trainers or similar casual attire. If you're unsure, get in touch with us before your visit.
+Is there a bag policy?
+Small bags are welcome, including handbags, purses and clutch bags up to A4 size.
+Backpacks and sports bags aren't permitted. For everyone's safety, our team also reserves the right to search bags on entry or exit.
+Can I smoke or vape at Moonshine?
+Smoking and vaping aren't permitted inside Moonshine.
+There is a space directly outside the front of the venue where you're welcome to smoke or vape during your visit.
+Is Moonshine accessible?
+Yes. An accessible lift is available at the venue.
+When you arrive, speak to a member of our door team at the main entrance and they'll be happy to assist you.
+
+Bookings & Tables
+Do I need to book?
+Walk-ins are always welcome, but if you have your heart set on a particular area of Moonshine, we recommend booking ahead - especially on Friday and Saturday nights.
+Reserving a table guarantees your seating and means you can settle in and enjoy the night without leaving it to chance.
+Is there a charge to reserve a table?
+Entry to Moonshine and our regular live entertainment is free, so you're always welcome to join us without a reservation.
+If you'd like to guarantee your space, tables can be reserved in advance for a booking fee, giving you guaranteed seating and table service throughout your visit.
+
+What's On
+What time do the live music and DJs start?
+The night builds as we go.
+Live performances in the Theatre usually begin between 9pm and 9.30pm, while our DJs typically start from around 8pm and keep things moving throughout the evening.
+Come down earlier for a drink, find your table and settle in before the entertainment begins.
+Performance times can vary, so take a look at our What's On page for the latest line-up and event details.
+Do I have to pay to see the live entertainment?
+Our regular live music and entertainment is free to enjoy - simply come in and join us.
+Some special events may be ticketed, so always check the individual event listing on our What's On page before visiting.
+Where should I book if I want to watch the live performance?
+For the best view of the action, book a table in our Theatre.
+A Theatre table guarantees you'll be able to see the performance, so you can settle in, order your drinks and enjoy the show from your seat.
+
+Bottomless Brunch
+When is Bottomless Brunch?
+Bottomless Brunch starts at 4pm on selected Saturdays.
+Check our Bottomless Brunch page for upcoming dates and availability.
+What's included in Bottomless Brunch?
+Settle in for 90 indulgent minutes of free-flowing drinks, grazing boards and live entertainment at Moonshine.
+Your brunch includes bottomless prosecco, draught beer and soft drinks, plus your own make-your-own bubbly cocktail kit. If you fancy something extra, you'll also have the option to upgrade to premium cocktails on the day.
+What food is included?
+Each Bottomless Brunch includes one of our curated grazing boards. Choose from mixed meat & cheese, cheese, or vegan, served while you sit back and enjoy the live entertainment.
+How long is Bottomless Brunch?
+Your Bottomless Brunch experience lasts 90 minutes, with free-flowing drinks throughout your session.
+How much is Bottomless Brunch?
+Bottomless Brunch is £45 per person, including your grazing board, 90 minutes of bottomless drinks, bubbly cocktail kit and live entertainment.
+Premium cocktail upgrades are also available on the day.
+How do I pay for Bottomless Brunch?
+Bottomless Brunch is paid in full when you book online. Your place is confirmed once payment has been completed.
+Is Bottomless Brunch 18+?
+Yes. Bottomless Brunch is strictly 18+.
+We operate a Challenge 25 policy, so please bring valid photo ID with you.
+Do you cater for dietary requirements?
+Yes. If you have any specific dietary requirements, please let us know when making your booking so our team can prepare for your visit.
+Are vegan options available?
+Yes. A vegan grazing board is available - simply request this when making your booking.
+Is there live entertainment during Bottomless Brunch?
+Of course. This is Moonshine, after all.
+Live entertainment is part of the Bottomless Brunch experience, giving you something to enjoy while the drinks flow and the grazing boards make their way around the table.
+
+Private Hire
+Can I hire a private area for a celebration?
+Absolutely. Moonshine offers spaces for private hire, whether you're planning a birthday, celebration, party, corporate event or something completely your own.
+Head to our Private Hire page and tell us what you have in mind. Our team will be in touch to talk through the possibilities and help bring it together.
+
+Travel & Location
+Where is Moonshine?
+You'll find us at:
+Moonshine91 High StreetLeicesterLE1 4JB
+Right in the heart of Leicester city centre.
+Where can I park?
+The closest parking is Highcross Rooftop Car Park, just a short walk from Moonshine.
+Other city centre parking options are also available nearby.
+How far is Moonshine from Leicester Railway Station?
+Leicester Railway Station is approximately a 15-minute walk from Moonshine, making us easy to reach if you're joining us from further afield.
+Can I get to Moonshine by bus?
+Yes. St Margaret's Bus Station is approximately a 10-minute walk away, with services connecting Leicester city centre and the surrounding areas.
+
+Build notes
+Use accessible accordions but render all text in the page HTML.
+Add FAQ schema only for questions and answers visible on the page.
+Link relevant answers directly to booking, brunch, private hire and contact pages.
+
+13. Contact page specification and copy
+SEO specification
+SEO title
+Contact Moonshine Leicester | 91 High Street, LE1 4JB
+Meta description
+Contact Moonshine Leicester, find opening hours and plan your visit to our speakeasy bar at 91 High Street in Leicester city centre.
+Recommended URL
+/contact/
+Primary search intent
+Moonshine Leicester contact / location
+
+CONTACT
+Find the hidden door.
+Moonshine is in the heart of Leicester city centre. Use the details below to find us, contact the team or send an enquiry about your visit.
+Visit us
+Moonshine91 High StreetLeicesterLE1 4JB
+CTA: OPEN IN MAPS
+Opening hours
+Thursday: 7pm-12amFriday: 6pm-3amSaturday: 4pm-3am
+Opening hours may vary for private events, selected sports screenings and seasonal dates. Check What’s On or contact the team when planning a specific visit.
+Get in touch
+Telephone: 07566 870558
+General email: moonshineleicester@gmail.com
+Contact form introduction
+Tell us what you need help with and choose the most relevant enquiry type so your message reaches the right person.
+Suggested enquiry types: General visit | Table booking | Bottomless Brunch | Private hire | Host an event | Accessibility | Lost property.
+Getting here copy 
+Moonshine is located on High Street in the heart of Leicester city centre.
+
+By TrainLeicester Railway Station is approximately a 15-minute walk from the venue, making us an easy destination whether you're visiting from across the city or further afield.
+
+By CarThe closest parking is available at Highcross Rooftop Car Park, just a short walk from Moonshine. Additional city centre parking is also available nearby.
+
+By BusSt Margaret's Bus Station is approximately a 10-minute walk away, with regular services connecting Leicester and the surrounding areas.
+
+Finding UsOur entrance is located on High Street. Look out for the Moonshine signage and step inside to discover Leicester's iconic speakeasy.
+
+Build notes
+Embed a lightweight map only after consent where required; always include a normal maps link.
+Make phone number clickable on mobile.
+Route forms by enquiry type.
+Add NAP details consistently across footer, schema and Google Business Profile.
+
+14. About Moonshine page
+SEO specification
+SEO title
+About Moonshine | Leicester’s Speakeasy Bar
+Meta description
+Discover Moonshine, Leicester’s atmospheric speakeasy bar for live music, cocktails, DJs, events and late-night experiences at 91 High Street.
+Recommended URL
+/about-moonshine/
+Primary search intent
+About Moonshine Leicester
+
+ABOUT MOONSHINE
+A different kind of night out in Leicester.
+Moonshine is a speakeasy-inspired bar hidden in the heart of Leicester city centre - a place built around atmosphere, performance and the pleasure of staying for one more drink.
+Inside, live artists perform close to the crowd. Vinyl DJs move between soul, jazz, funk, Motown, hip hop, reggae and late-night favourites. Cocktails arrive at candlelit tables. Different rooms create different ways to spend the evening, from the energy of the main space to the privacy of the Members Bar and the relaxed pace of the Sports Bar.
+The programme changes, but the intention stays the same: to offer Leicester nights with character.
+Not a museum. Not an ordinary bar.
+The influence of the speakeasy is there in the hidden setting, rich textures and sense of occasion. Moonshine is not about asking every guest to play a part. It is about giving people somewhere that feels removed from the everyday, while staying warm, welcoming and unmistakably part of modern Leicester.
+The night is the headline
+Live music, DJs, brunches, private celebrations and new event ideas all have a place here. Explore What’s On, reserve a table or bring us an event you want to create.
+CTAs: SEE WHAT’S ON  |  BOOK A TABLE
+
+15. Table booking journey
+SEO specification
+SEO title
+Book a Table at Moonshine Leicester
+Meta description
+Reserve your table at Moonshine Leicester and choose from the Theatre Stage, Main Bar, Sports Bar or Members Bar, subject to availability.
+Recommended URL
+/book-a-table/
+Primary search intent
+Book Moonshine Leicester
+
+BOOK A TABLE
+Choose how you want to spend the night.
+Entry and regular live entertainment at Moonshine are free. Reserving a table gives you a guaranteed place, the option to choose the area that suits your plans and table service during your visit.
+Theatre Stage
+Guaranteed seating with prime views of live performances in Moonshine’s most intimate setting. The right choice when the artist is the reason for your visit.
+Speakeasy Bar
+Booths and relaxed seating for social drinks and larger groups. You will remain close to the atmosphere, although views of live performances are not guaranteed from every table.
+Sports Bar
+Comfortable booths, large screens, a darts board, pool table and a fully stocked bar. Available for selected sports screenings and group bookings.
+Members Bar
+A more private, refined setting with comfortable booth seating. Availability may be limited by private events and peak periods.
+Booking support copy
+Not sure which area to choose? Tell us what brings you to Moonshine and the team will help where availability allows.
+
+Confirmation page copy
+Confirmed booking
+Your table is confirmed. We have sent the booking details to your email address. Please check the date, arrival time, area and booking terms before your visit. Questions? Call 07566 870558 or contact the team.
+Request received
+We have received your booking request. This is not yet a confirmed reservation. The team will contact you using the details provided once availability has been checked.
+
+16. Footer, forms and system copy
+Footer description
+Moonshine is a speakeasy-inspired bar for cocktails, live music, events and late nights in the heart of Leicester city centre.
+Footer details
+91 High Street, Leicester, LE1 4JB07566 870558Thursday 7pm-12am | Friday 6pm-3am | Saturday 4pm-3am
+Footer links
+What’s On | Bottomless Brunch | Book a Table | Private Hire | Host Your Event | FAQs | Contact | Privacy | Cookies | Terms | Accessibility
+Newsletter form
+Heading: Stay close to the secret.Supporting copy: New artists, special events and the nights worth knowing about.Fields: First name, last name, email.Button: JOIN THE LISTSuccess: You’re on the list. Keep an eye on your inbox.Error: Something did not work. Please check your details and try again.
+General form microcopy
+Submit button
+SEND ENQUIRY
+Required field error
+Please complete this field.
+Email error
+Enter a valid email address.
+Form success
+Your message has reached the Moonshine team.
+Form failure
+Your message could not be sent. Please try again or call 07566 870558.
+Privacy note
+We will use your details to respond to this enquiry. Marketing consent is optional and separate.
+
+
+17. Photography and motion direction
+The visual brief should follow the supplied social guidelines so the website feels like stepping into Moonshine: warm, cinematic, moody, intimate and timeless.
+Priority visual language
+Red, amber, gold, sepia, deep brown, dark wood and muted brass.
+Warm, rich skin tones.
+Tight, intimate crops and layered frames.
+Foreground elements such as glassware, curtains, door frames and silhouettes.
+Candid guest interactions rather than stiff posing.
+Performers mid-movement, crowd reactions, hands on instruments, decks or vinyl.
+Venue details: velvet, wallpaper, wood, candles, reflections and brass.
+Avoid
+Cool blue, pink or purple lighting as the dominant website look.
+Empty sterile room photography.
+Straight-on flash crowd shots as the primary visual language.
+Text-heavy event posters replacing accessible event information.
+Generic cocktail stock photography.
+Autoplay video with sound or rapid edits that reduce readability.
+Page-by-page visual recommendations
+Home
+Cinematic hero loop, three experience cards, booking atmosphere, host-event collaboration, exterior / location detail.
+What’s On
+Artist-first images with consistent crop ratios and a strong mix of performance and portrait imagery.
+Bottomless Brunch
+Real inclusions, performer, groups, grazing boards and drinks.
+Private Hire
+Wide room establishing image plus details and real event use for each space.
+Host Your Event
+Creative participation, microphones, workshops, canvases, records, audience interaction.
+FAQ / Contact
+Architectural details, doorway, exterior and wayfinding rather than generic crowd content.
+About
+Best brand-defining photography and, if verified, historical material.
+
+
+18. Technical SEO and measurement
+Structured data
+LocalBusiness or BarOrPub schema with accurate name, address, phone, hours and sameAs profiles.
+Event schema for each eligible public event, including status changes.
+FAQPage schema only where the visible page meets search-engine requirements.
+BreadcrumbList schema on interior and event pages.
+Performance and accessibility
+Compress hero video and provide poster image, captions where speech matters and reduced-motion behaviour.
+Use visible focus states, keyboard-accessible menus and accordions, and sufficient colour contrast.
+Give every meaningful image useful alt text; use empty alt text for decorative images.
+Do not render text as part of images.
+Meet Core Web Vitals by controlling image dimensions and limiting third-party scripts.
+Ensure the booking widget is usable on mobile and does not trap keyboard focus.
+Measurement plan
+Primary conversions
+Table booking started / completed; brunch booking; private hire enquiry; host-event enquiry.
+Secondary conversions
+Phone click; map click; newsletter sign-up; event detail view; booking CTA click.
+Useful dimensions
+Page, event, room, device, traffic source, campaign and enquiry type.
+Reporting view
+Monthly conversion by landing page and offer, plus top organic queries and event performance.
+
+
+19. Content governance and launch checklist
+Operational ownership
+Events
+Named team member responsible for dates, images, room, copy, booking links and status. > CHELSEA/TRIPLE DOWN
+Opening hours
+One definitive source updated across website, schema and Google Business Profile. > FRAN
+Brunch
+Owner for price, menu, inclusions, terms and availability. > NAT
+Private hire
+Owner for capacities, packages, costs, availability and enquiry response. > FRAN / NAT
+Policies
+Management sign-off for age, dress, access, bags, cancellations and conduct. > FRAN
+SEO hygiene
+Quarterly check for broken links, outdated event pages, duplicate titles and indexable test content. > TRIPLE DOWN TO CHECK
+
+Launch QA
+Every CTA reaches the correct live destination.
+Every page has a unique title, meta description and H1.
+All venue details match across page copy, footer and schema.
+Forms route correctly and send confirmations.
+Event cards work across desktop and mobile.
+Booking widget works with keyboard, mobile and date deep links.
+Images have correct crops, file sizes and alt text.
+Redirect map covers changed URLs.
+Analytics and consent mode are tested.
+No placeholder copy, hidden lorem ipsum or expired event graphics remain.
+Definitive dress-code interpretation.
+Final agency instruction
+Build for atmosphere, manage for accuracy
+The site should look editorial and immersive, but its content must be modular and easy for the Moonshine team to maintain. Events, hours, prices, rooms, FAQs and booking links should all be editable without redesigning a page.
+
+End of specification
+

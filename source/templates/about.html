@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block body_class %}page-about{% endblock %}
+{% block header_class %} site-header--overlay{% endblock %}
+
+{% block content %}
+<section class="hero hero--page">
+  <div class="hero__media tint">{{ m.pic('slide-dj-bw', sizes='100vw', priority=true) }}</div>
+  <div class="hero__content hero__content--left">
+    <p class="eyebrow">About Moonshine</p>
+    <h1 class="display-xl">A different kind of<br>night out in Leicester.</h1>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap wrap--narrow">
+    <p class="lede">Moonshine is a speakeasy-inspired bar hidden in the heart of Leicester city centre - a place built around atmosphere, performance and the pleasure of staying for one more drink.</p>
+    <p>Inside, live artists perform close to the crowd. Vinyl DJs move between soul, jazz, funk, Motown, hip hop, reggae and late-night favourites. Cocktails arrive at candlelit tables. Different rooms create different ways to spend the evening, from the energy of the main space to the privacy of the Members Bar and the relaxed pace of the Sports Bar.</p>
+    <p>The programme changes, but the intention stays the same: to offer Leicester nights with character.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="gallery gallery--3">
+    <div class="media">{{ m.pic('ig-dj-vinyl', sizes='(max-width:700px) 100vw, 33vw') }}</div>
+    <div class="media">{{ m.pic('cocktails-bar', sizes='(max-width:700px) 100vw, 33vw') }}</div>
+    <div class="media">{{ m.pic('ig-singer-close', sizes='(max-width:700px) 100vw, 33vw') }}</div>
+  </div>
+</section>
+
+<section class="band band--ink">
+  <div class="wrap split split--top">
+    <div><h2 class="display-l">Not a museum.<br>Not an ordinary bar.</h2></div>
+    <div>
+      <p class="lede">The influence of the speakeasy is there in the hidden setting, rich textures and sense of occasion. Moonshine is not about asking every guest to play a part. It is about giving people somewhere that feels removed from the everyday, while staying warm, welcoming and unmistakably part of modern Leicester.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band--red center">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow">The night is the headline</p>
+    <h2 class="display-l">Live music, DJs, brunches, private celebrations and new event ideas all have a place here.</h2>
+    <p class="hero__actions">{{ m.btn("See What's On", '/whats-on/', 'cream') }} {{ m.btn('Book a Table', '/book-a-table/', 'ghost') }}</p>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block body_class %}page-book{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Book a Table</p>
+    <h1 class="display-xl">Choose how you want<br>to spend the night.</h1>
+    <div class="page-head__intro">
+      <p class="lede">Entry and regular live entertainment at Moonshine are free. Reserving a table gives you a guaranteed place, the option to choose the area that suits your plans and table service during your visit.</p>
+      <p class="notice" data-book-date hidden></p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" aria-labelledby="areas">
+  <h2 id="areas" class="visually-hidden">Areas you can book</h2>
+  <div class="areas">
+    {% for r in rooms %}
+    <article class="area">
+      <div class="media">{{ m.pic(r.image, sizes='(max-width:700px) 100vw, 25vw') }}</div>
+      <h3 class="display-s">{{ r.name }}</h3>
+      <p>{{ r.book_blurb }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="band band--red" id="book" aria-labelledby="widget-h">
+  <div class="wrap booking">
+    <div>
+      <h2 id="widget-h" class="display-l">Reserve your<br>perfect spot.</h2>
+      <div class="caps booking__copy">
+        <p>Pick your date, party size and time. Table reservations carry a booking charge, which guarantees your seating and table service throughout your visit.</p>
+        <p>Not sure which area to choose? Tell us what brings you to Moonshine and the team will help where availability allows.</p>
+      </div>
+      <p><a class="btn btn--cream btn--sm" href="/contact/">Ask the team</a></p>
+    </div>
+    {{ m.resdiary(venue.resdiary.tables, venue.resdiary.tables_page) }}
+  </div>
+</section>
+
+<section class="band band--tight">
+  <div class="wrap wrap--narrow">
+    <h2 class="display-m">Before you book</h2>
+    <ul class="checks">
+      <li>Moonshine is strictly 18+ with a Challenge 25 policy. Bring photo ID.</li>
+      <li>Smart dress code. No hoodies, caps, sportswear or sports trainers.</li>
+      <li>Walk-ins are welcome, subject to capacity. On Friday and Saturday nights and for live performances, booking ahead is recommended.</li>
+      <li>For Bottomless Brunch, <a href="/bottomless-brunch-leicester/">book through the brunch page</a>.</li>
+    </ul>
+    <p><a class="link" href="/faqs/">Read the FAQs</a></p>
+  </div>
+</section>
+{% endblock %}

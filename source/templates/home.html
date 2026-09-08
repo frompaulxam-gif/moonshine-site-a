@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% block body_class %}page-home{% endblock %}
+{% block header_class %} site-header--overlay{% endblock %}
+
+{% block content %}
+<section class="hero" aria-label="Welcome to Moonshine">
+  <div class="hero__media">
+    {% if venue.hero_video %}
+    <video autoplay muted loop playsinline preload="auto" poster="/static/img/hero-video-poster.jpg" aria-hidden="true">
+      <source src="{{ venue.hero_video_portrait or venue.hero_video }}" type="video/mp4" media="(max-width: 700px) and (orientation: portrait)">
+      <source src="{{ venue.hero_video }}" type="video/mp4">
+    </video>
+    {% else %}
+    <picture>
+      <source media="(max-width: 700px) and (orientation: portrait)" srcset="/static/img/hero-portrait-900.webp" type="image/webp">
+      <source srcset="/static/img/hero-bar.webp" type="image/webp">
+      <img src="/static/img/hero-bar.jpg" alt="" fetchpriority="high" decoding="async">
+    </picture>
+    {% endif %}
+  </div>
+  <div class="hero__content">
+    <img class="hero__badge" src="/static/img/logo.png" alt="Moonshine Speakeasy, est. 2024" width="110" height="100">
+    <h1 class="display-xl">Leicester's Iconic<br>Speakeasy Bar</h1>
+    <div class="hero__actions">
+      {{ m.btn('Book a Table', '/book-a-table/', 'red') }}
+      {{ m.btn("See What's On", '/whats-on/', 'ghost') }}
+    </div>
+  </div>
+  {% if venue.hero_video %}<button class="hero__pause" type="button" aria-label="Pause video" aria-pressed="false" data-pause>Pause</button>{% endif %}
+</section>
+
+<div class="script-band"><p class="script">Leave ordinary at the door...</p></div>
+
+<section class="band band--tight center">
+  <div class="wrap">
+    <p class="caps intro-caps">Hidden in the heart of Leicester, Moonshine brings together cocktails, live music and late-night atmosphere in a setting made for memorable nights.</p>
+  </div>
+</section>
+
+<section class="band band--tight" aria-labelledby="explore">
+  <div class="wrap">
+    <h2 id="explore" class="visually-hidden">Explore Moonshine</h2>
+    <div class="tiles">
+      {{ m.tile('ig-singer-stage', "What's On", 'Live music, vinyl DJs and nights worth discovering.', "Explore What's On", '/whats-on/') }}
+      {{ m.tile('brunch-cheers', 'Bottomless Brunch', 'Great food, free-flowing drinks and live entertainment.', 'Discover Brunch', '/bottomless-brunch-leicester/') }}
+      {{ m.tile('room-speakeasy', 'Private Hire', 'From birthdays to corporate celebrations, make Moonshine yours.', 'Explore Private Hire', '/private-hire-leicester/') }}
+    </div>
+  </div>
+</section>
+
+{% if next_events %}
+<section class="band band--tight next" aria-labelledby="next">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Next at Moonshine</p>
+      <h2 id="next" class="display-l">Nights worth stepping out for</h2>
+    </div>
+    <div class="next__list">
+      {% for e in next_events %}
+      <a class="next__row" href="{{ e.url }}">
+        <span class="next__date">{{ e.date_short }}<small>{{ e.time_label }}</small></span>
+        <span class="next__title"><span class="display-s">{{ e.title }}</span><span class="next__meta">{{ e.genre_line }}{% if e.room_short %} · {{ e.room_short }}{% endif %}</span></span>
+        <span class="next__cta">Find out more</span>
+      </a>
+      {% endfor %}
+    </div>
+    <p class="center mt-2">{{ m.btn("See the full programme", '/whats-on/', 'ghost') }}</p>
+  </div>
+</section>
+{% endif %}
+
+<section class="band band--red" id="book" aria-labelledby="table">
+  <div class="wrap booking">
+    <div>
+      <h2 id="table" class="display-l">Your table<br>is waiting.</h2>
+      <div class="caps booking__copy">
+        <p>Entry to Moonshine and our regular live entertainment is free.</p>
+        <p>Table reservations carry a booking charge, giving you a guaranteed place to settle in, table service throughout your visit and the confidence that your night is planned before you arrive.</p>
+        <p>Walk-ins are welcome, subject to capacity. For live performances and busy weekends, booking ahead is recommended.</p>
+      </div>
+      <p>{{ m.btn('Choose your area', '/book-a-table/', 'cream') }}</p>
+    </div>
+    {{ m.resdiary(venue.resdiary.tables, venue.resdiary.tables_page) }}
+  </div>
+</section>
+
+<section class="band" aria-labelledby="more">
+  <div class="wrap">
+    <h2 id="more" class="visually-hidden">More from Moonshine</h2>
+    <div class="tiles">
+      {{ m.tile('ig-guitar-stage', 'Host Your Event', "Have an idea? Let's bring it to life.", 'Bring us your idea', '/host-your-event/') }}
+      {{ m.tile('ig-bar-taps', 'FAQs', 'Everything you need to know before you visit.', 'Plan your visit', '/faqs/') }}
+      {{ m.tile('bartender-pour', 'Contact Us', 'Find us, get in touch or plan your next visit.', 'Find us', '/contact/') }}
+    </div>
+  </div>
+</section>
+
+<section class="band band--ink newsletter" aria-labelledby="news">
+  <div class="wrap wrap--narrow center">
+    <h2 id="news" class="display-l">Stay close to the secret.</h2>
+    <p class="lede center-block">New artists, special events and the nights you will want to know about - delivered occasionally, never noisily.</p>
+    <form class="form form--inline" data-stub novalidate>
+      <div class="form__fields">
+        <label><span class="visually-hidden">First name</span><input type="text" name="first" placeholder="First name" required autocomplete="given-name"></label>
+        <label><span class="visually-hidden">Last name</span><input type="text" name="last" placeholder="Last name" required autocomplete="family-name"></label>
+        <label><span class="visually-hidden">Email</span><input type="email" name="email" placeholder="Email address" required autocomplete="email"></label>
+        <button class="btn btn--red" type="submit">Join the list</button>
+      </div>
+      <p class="form__msg" hidden tabindex="-1">You're on the list. Keep an eye on your inbox.</p>
+    </form>
+  </div>
+</section>
+{% endblock %}

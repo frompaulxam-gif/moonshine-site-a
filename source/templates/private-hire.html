@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% block body_class %}page-hire{% endblock %}
+{% block header_class %} site-header--overlay{% endblock %}
+
+{% block content %}
+<section class="hero hero--page">
+  <div class="hero__media">{{ m.pic('room-speakeasy', sizes='100vw', priority=true) }}</div>
+  <div class="hero__content hero__content--left">
+    <p class="eyebrow">Private Hire</p>
+    <h1 class="display-xl">Make the room<br>part of the story.</h1>
+    <p class="lede">Some occasions deserve more than an ordinary function space. Hidden in Leicester city centre, Moonshine offers three distinctive areas for celebrations, company gatherings, launches, parties, photoshoots, video shoots and private events.</p>
+    <div class="hero__actions hero__actions--left">{{ m.btn('Enquire about private hire', '#enquire', 'red') }}</div>
+  </div>
+</section>
+
+<section class="band band--tight center">
+  <div class="wrap"><p class="caps intro-caps">From the atmosphere and drinks to entertainment and room layout, our team will help shape the setting around the occasion.</p></div>
+</section>
+
+<section class="wrap rooms" aria-labelledby="spaces">
+  <h2 id="spaces" class="visually-hidden">The spaces</h2>
+  {% for r in hire_rooms %}
+  <article class="room">
+    <div class="media">{{ m.pic(r.image, sizes='(max-width:900px) 100vw, 50vw') }}</div>
+    <div class="room__copy">
+      <p class="eyebrow">Space {{ loop.index }} of {{ hire_rooms|length }}</p>
+      <h3 class="display-l">The {{ r.name }}</h3>
+      <p class="lede">{{ r.hire_blurb }}</p>
+      {% if r.facts %}
+      <dl class="facts">{% for k, v in r.facts.items() %}<div><dt>{{ k }}</dt><dd>{{ v }}</dd></div>{% endfor %}</dl>
+      {% endif %}
+      <p><a class="btn btn--red btn--sm" href="#enquire" data-pick-room="{{ r.name }}">Enquire about the {{ r.name }}</a></p>
+    </div>
+  </article>
+  {% endfor %}
+</section>
+
+<section class="band band--ink" aria-labelledby="welcome">
+  <div class="wrap split split--top">
+    <div>
+      <p class="eyebrow">Events we welcome</p>
+      <h2 id="welcome" class="display-l">Bring the occasion</h2>
+    </div>
+    <ul class="checks checks--2">
+      <li>Birthday celebrations and milestone occasions.</li>
+      <li>Corporate parties and team socials.</li>
+      <li>Networking and client events.</li>
+      <li>Christmas and seasonal parties.</li>
+      <li>Video and photoshoots.</li>
+      <li>Launches, showcases and receptions.</li>
+      <li>Private live music and entertainment nights.</li>
+      <li>Sports screenings and group gatherings.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="enquire" aria-labelledby="enq">
+  <div class="wrap split split--top">
+    <div>
+      <p class="eyebrow">Your event, shaped with us</p>
+      <h2 id="enq" class="display-l">Start your enquiry</h2>
+      <p class="lede">Tell us the date, guest numbers, preferred space and the kind of atmosphere you want to create. The team will come back to you with availability and the most suitable options for your event.</p>
+      <p class="small">We will use your details to respond to this enquiry. Marketing consent is optional and separate.</p>
+    </div>
+    <form class="form" data-stub novalidate>
+      <div class="form__fields">
+        <div class="row">
+          <label>Name<input type="text" name="name" required autocomplete="name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email"></label>
+        </div>
+        <div class="row">
+          <label>Phone<input type="tel" name="phone" required autocomplete="tel"></label>
+          <label>Company <span class="opt">(optional)</span><input type="text" name="company" autocomplete="organization"></label>
+        </div>
+        <div class="row">
+          <label>Event type
+            <select name="type" required>
+              <option value="">Choose one</option>
+              <option>Birthday or celebration</option><option>Corporate or team event</option><option>Networking or client event</option><option>Christmas or seasonal party</option><option>Photo or video shoot</option><option>Launch, showcase or reception</option><option>Private live music night</option><option>Sports screening</option><option>Something else</option>
+            </select>
+          </label>
+          <label>Preferred date<input type="date" name="date" required></label>
+        </div>
+        <div class="row">
+          <label>Estimated guest count<input type="number" name="guests" min="1" required></label>
+          <label>Preferred room
+            <select name="room" required>
+              <option value="">Choose one</option>
+              {% for r in hire_rooms %}<option>{{ r.name }}</option>{% endfor %}
+              <option>Not sure yet</option>
+            </select>
+          </label>
+        </div>
+        <div class="row">
+          <label>Seated or standing <span class="opt">(optional)</span><select name="layout"><option value="">No preference</option><option>Mostly seated</option><option>Mostly standing</option><option>A mix</option></select></label>
+          <label>Budget range <span class="opt">(optional)</span><input type="text" name="budget"></label>
+        </div>
+        <label>Tell us about the event<textarea name="message" rows="5" required></textarea></label>
+        <label class="check"><input type="checkbox" name="flex"> My dates are flexible</label>
+        <label class="check"><input type="checkbox" name="consent" required> I understand Moonshine will use these details to respond to my enquiry.</label>
+        <label class="check"><input type="checkbox" name="marketing"> Keep me posted about new artists and special events. <span class="opt">(optional)</span></label>
+        <p><button class="btn btn--red" type="submit">Send enquiry</button></p>
+      </div>
+      <p class="form__msg" hidden tabindex="-1">Your message has reached the Moonshine team. We will come back to you with availability and options as soon as we can.</p>
+    </form>
+  </div>
+</section>
+{% endblock %}

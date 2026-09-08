@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body_class %}page-simple{% endblock %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap wrap--narrow">
+    <h1 class="display-l">{{ heading }}</h1>
+    <div class="page-head__intro lede">{{ body_html|safe }}</div>
+    <p class="hero__actions hero__actions--left mt-2">{{ m.btn("See What's On", '/whats-on/', 'red') }} {{ m.btn('Book a Table', '/book-a-table/', 'ghost') }}</p>
+  </div>
+</section>
+{% endblock %}

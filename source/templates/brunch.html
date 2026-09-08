@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block body_class %}page-brunch{% endblock %}
+{% block header_class %} site-header--overlay{% endblock %}
+
+{% block content %}
+<section class="hero hero--page">
+  <div class="hero__media">{{ m.pic('brunch-cheers', sizes='100vw', priority=true) }}</div>
+  <div class="hero__content hero__content--left">
+    <p class="eyebrow">Bottomless Brunch</p>
+    <h1 class="display-xl">Bottomless Brunch,<br>the Moonshine way.</h1>
+    <p class="lede">Step inside for ninety minutes of free-flowing drinks, curated grazing boards and live entertainment in one of Leicester's most atmospheric venues.</p>
+    <div class="hero__actions hero__actions--left">{{ m.btn('Book Bottomless Brunch', '#book', 'red') }}</div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap split">
+    <div>
+      <p class="lede">Made for birthdays, catch-ups and afternoons that deserve to become evenings, Moonshine Bottomless Brunch is <strong>£45 per person</strong> and takes place on selected Saturdays.</p>
+      <h2 class="display-m">What is included</h2>
+      <ul class="checks">
+        <li>90 minutes of bottomless prosecco, draught beer and soft drinks.</li>
+        <li>Your own make-your-own bubbly cocktail kit.</li>
+        <li>A curated grazing board - choose mixed meat and cheese, cheese-only or vegan.</li>
+        <li>Live entertainment throughout your visit.</li>
+        <li>The option to upgrade to premium cocktails on the day.</li>
+      </ul>
+      <h2 class="display-m">Good to know</h2>
+      <p>Please tell us about dietary requirements when booking so the team can prepare the right board for your table.</p>
+      <p>Your booking is for a timed 90-minute bottomless experience. Please arrive promptly so you can enjoy the full sitting. The venue's 18+ and ID policies apply.</p>
+    </div>
+    <div class="price-card">
+      <p class="eyebrow">Selected Saturdays from 4pm</p>
+      <p class="price-card__price"><span class="display-xl">£45</span><span>per person</span></p>
+      <p class="caps">90 minutes · grazing board · bubbly cocktail kit · live entertainment</p>
+      <p>{{ m.btn('Book Bottomless Brunch', '#book', 'red') }}</p>
+    </div>
+  </div>
+</section>
+
+{% if brunch_events %}
+<section class="band band--tight band--ink" aria-labelledby="dates">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Upcoming dates</p><h2 id="dates" class="display-l">Next brunches</h2></div>
+    <div class="events events--3">{% for e in brunch_events %}{{ m.event_card(e) }}{% endfor %}</div>
+  </div>
+</section>
+{% endif %}
+
+<section class="band band--red" id="book" aria-labelledby="book-h">
+  <div class="wrap booking">
+    <div>
+      <h2 id="book-h" class="display-l">Book your<br>brunch.</h2>
+      <div class="caps booking__copy">
+        <p>Bottomless Brunch is paid in full when you book online. Your place is confirmed once payment has been completed.</p>
+        <p>Availability, sitting times and booking terms are shown in the calendar and confirmed during checkout.</p>
+      </div>
+    </div>
+    {{ m.resdiary(venue.resdiary.brunch, venue.resdiary.brunch_page) }}
+  </div>
+</section>
+
+<section class="band" aria-labelledby="gallery">
+  <div class="wrap">
+    <h2 id="gallery" class="visually-hidden">Brunch at Moonshine</h2>
+    <div class="gallery">
+      <div class="media">{{ m.pic('brunch-tower', sizes='(max-width:700px) 50vw, 25vw') }}</div>
+      <div class="media">{{ m.pic('ig-group-sing', sizes='(max-width:700px) 50vw, 25vw') }}</div>
+      <div class="media">{{ m.pic('champagne', sizes='(max-width:700px) 50vw, 25vw') }}</div>
+      <div class="media">{{ m.pic('ig-singer-stage', sizes='(max-width:700px) 50vw, 25vw') }}</div>
+    </div>
+  </div>
+</section>
+
+{% if brunch_faqs %}
+<section class="band band--tight band--ink" aria-labelledby="bfaq">
+  <div class="wrap wrap--narrow">
+    <div class="section-head"><p class="eyebrow">Questions</p><h2 id="bfaq" class="display-l">Brunch, answered</h2></div>
+    {% for q in brunch_faqs['items'] %}
+    <details class="faq">
+      <summary>{{ q.q }}</summary>
+      <div class="faq__a">{% for p in q.a %}<p>{{ p }}</p>{% endfor %}</div>
+    </details>
+    {% endfor %}
+    <p class="mt-2"><a class="link" href="/faqs/">All frequently asked questions</a></p>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

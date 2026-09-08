@@ -1,0 +1,146 @@
+{
+  "name": "Moonshine",
+  "legal_name": "Moonshine Speakeasy Leicester",
+  "tagline": "Leicester's Iconic Speakeasy Bar",
+  "description": "Moonshine is a speakeasy-inspired bar for cocktails, live music, events and late nights in the heart of Leicester city centre.",
+  "site_url": "https://www.moonshineleicester.co.uk",
+  "phone": "07566 870558",
+  "phone_tel": "07566870558",
+  "phone_intl": "+44 7566 870558",
+  "email": "moonshineleicester@gmail.com",
+  "address": {
+    "street": "91 High Street",
+    "city": "Leicester",
+    "postcode": "LE1 4JB",
+    "country": "United Kingdom"
+  },
+  "maps_url": "https://maps.app.goo.gl/tBHG6mCruWqSizTX6",
+  "maps_embed": "https://www.google.com/maps?q=Moonshine%2C+91+High+Street%2C+Leicester+LE1+4JB&output=embed",
+  "hero_video": "/static/video/hero.mp4",
+  "hero_video_portrait": "/static/video/hero-portrait.mp4",
+  "hours": [
+    {"day": "Thursday", "label": "Thursday", "text": "7pm - 12am", "opens": "19:00", "closes": "00:00"},
+    {"day": "Friday", "label": "Friday", "text": "6pm - 3am", "opens": "18:00", "closes": "03:00"},
+    {"day": "Saturday", "label": "Saturday", "text": "4pm - 3am", "opens": "16:00", "closes": "03:00"}
+  ],
+  "hours_note": "Bank Holiday Sundays: open on selected dates. Hours may vary for private events, selected sports screenings and seasonal dates.",
+  "socials": {
+    "instagram": "https://www.instagram.com/moonshineleicester",
+    "instagram_handle": "@moonshineleicester",
+    "facebook": "https://www.facebook.com/profile.php?id=61568075639734",
+    "fatsoma": "https://www.fatsoma.com/p/moonshine-speakeasy-"
+  },
+  "resdiary": {
+    "loader": "https://booking.resdiary.com/bundles/WidgetV2Loader.js",
+    "tables": "https://booking.resdiary.com/widget/Standard/Moonshine/68435?includeJquery=false",
+    "brunch": "https://booking.resdiary.com/widget/Standard/Moonshine/68894?includeJquery=false",
+    "tables_page": "https://booking.resdiary.com/widget/Standard/Moonshine/68435",
+    "brunch_page": "https://booking.resdiary.com/widget/Standard/Moonshine/68894"
+  },
+  "nav": [
+    {"label": "What's On", "url": "/whats-on/"},
+    {"label": "Bottomless Brunch", "url": "/bottomless-brunch-leicester/"},
+    {"label": "Private Hire", "url": "/private-hire-leicester/"},
+    {"label": "Host Your Event", "url": "/host-your-event/"},
+    {"label": "FAQs", "url": "/faqs/"},
+    {"label": "Contact", "url": "/contact/"}
+  ],
+  "footer_links": [
+    {"label": "What's On", "url": "/whats-on/"},
+    {"label": "Bottomless Brunch", "url": "/bottomless-brunch-leicester/"},
+    {"label": "Book a Table", "url": "/book-a-table/"},
+    {"label": "Private Hire", "url": "/private-hire-leicester/"},
+    {"label": "Host Your Event", "url": "/host-your-event/"},
+    {"label": "About Moonshine", "url": "/about-moonshine/"},
+    {"label": "FAQs", "url": "/faqs/"},
+    {"label": "Contact", "url": "/contact/"}
+  ],
+  "legal_links": [
+    {"label": "Privacy", "url": "/privacy/"},
+    {"label": "Cookies", "url": "/cookies/"},
+    {"label": "Terms", "url": "/terms/"},
+    {"label": "Accessibility", "url": "/accessibility/"}
+  ],
+  "rooms": [
+    {
+      "slug": "theatre",
+      "name": "Theatre Stage",
+      "short": "Theatre",
+      "image": "room-theatre",
+      "hire": false,
+      "book_blurb": "Guaranteed seating with prime views of live performances in Moonshine's most intimate setting. The right choice when the artist is the reason for your visit."
+    },
+    {
+      "slug": "speakeasy-bar",
+      "name": "Speakeasy Bar",
+      "short": "Speakeasy Bar",
+      "image": "room-speakeasy",
+      "hire": true,
+      "book_blurb": "Booths and relaxed seating for social drinks and larger groups. You will remain close to the atmosphere, although views of live performances are not guaranteed from every table.",
+      "hire_blurb": "Moonshine at its most recognisable - warm, intimate and made for evenings with atmosphere. The Speakeasy Bar is suited to celebrations, drinks receptions, live entertainment and events that deserve a distinctive backdrop.",
+      "facts": {}
+    },
+    {
+      "slug": "members-bar",
+      "name": "Members Bar",
+      "short": "Members Bar",
+      "image": "room-members",
+      "hire": true,
+      "book_blurb": "A more private, refined setting with comfortable booth seating. Availability may be limited by private events and peak periods.",
+      "hire_blurb": "A more private, refined room with comfortable booth seating and a tucked-away feel. The Members Bar works well for smaller celebrations, networking, team gatherings, hosted drinks and occasions that benefit from their own space.",
+      "facts": {}
+    },
+    {
+      "slug": "sports-bar",
+      "name": "Sports Bar",
+      "short": "Sports Bar",
+      "image": "room-sports",
+      "hire": true,
+      "book_blurb": "Comfortable booths, large screens, a darts board, pool table and a fully stocked bar. Available for selected sports screenings and group bookings.",
+      "hire_blurb": "A relaxed space with a fully stocked bar, comfortable booths, large screens, a darts board and pool table. Ideal for sports screenings, informal company socials, group celebrations and private gatherings with a more casual pace.",
+      "facts": {}
+    }
+  ],
+  "series": [
+    {
+      "key": "thursdays",
+      "name": "Moonshine Thursdays",
+      "when": "Thursdays from 7pm",
+      "entry": "Free, ticket via Fatsoma",
+      "copy": "Our slower, more intimate midweek evenings, rotating between Trivia Night, Karaoke Night, Retro Movie Night and Open Mic Night, with the Nola Jam Sessions on selected third Thursdays. Events start from 7pm and are free to attend, just secure your ticket via Fatsoma. Afterwards our resident vinyl DJ keeps things moving with jazz, blues, soul and rock 'n' roll, and happy hour runs all night.",
+      "image": "ig-dj-vinyl",
+      "cta_label": "Secure your free ticket",
+      "cta_url": "https://www.fatsoma.com/p/moonshine-speakeasy-"
+    },
+    {
+      "key": "fridays",
+      "name": "Moonshine Fridays",
+      "when": "Fridays, 6pm - 3am",
+      "entry": "Free entry",
+      "copy": "Live music on the Theatre Stage from 9.30pm, then resident DJ Benzo soundtracks the rest of the night with the biggest anthems from the 90s through to today. Happy hour 6pm to 8pm.",
+      "image": "ig-singer-stage",
+      "cta_label": "Book a table",
+      "cta_url": "/book-a-table/"
+    },
+    {
+      "key": "saturdays",
+      "name": "Saturdays Live",
+      "when": "Saturdays, 4pm - 3am",
+      "entry": "Free entry",
+      "copy": "Live music every Saturday from 9.30pm: jazz, blues, soul, Motown and rock 'n' roll, performed close enough to feel every note. Happy hour 5pm to 7pm.",
+      "image": "ig-band-stage",
+      "cta_label": "Book a table",
+      "cta_url": "/book-a-table/"
+    },
+    {
+      "key": "brunch",
+      "name": "Bottomless Brunch",
+      "when": "Selected Saturdays from 4pm",
+      "entry": "£45 per person",
+      "copy": "Ninety minutes of bottomless prosecco, draught beer and soft drinks, a make-your-own bubbly cocktail kit, a curated grazing board and live entertainment. Booked and paid online.",
+      "image": "brunch-cheers",
+      "cta_label": "Discover brunch",
+      "cta_url": "/bottomless-brunch-leicester/"
+    }
+  ]
+}

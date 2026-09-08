@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block body_class %}page-contact{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h1 class="display-xl">Find the<br>hidden door.</h1>
+    <div class="page-head__intro"><p class="lede">Moonshine is in the heart of Leicester city centre. Use the details below to find us, contact the team or send an enquiry about your visit.</p></div>
+  </div>
+</section>
+
+<section class="wrap contact-grid">
+  <div class="contact-card">
+    <p class="eyebrow">Visit us</p>
+    <address class="display-s">Moonshine<br>{{ venue.address.street }}<br>{{ venue.address.city }}<br>{{ venue.address.postcode }}</address>
+    <p><a class="btn btn--red btn--sm" href="{{ venue.maps_url }}" rel="noopener">Open in Maps</a></p>
+  </div>
+  <div class="contact-card">
+    <p class="eyebrow">Opening hours</p>
+    <ul class="hours hours--big">{% for h in venue.hours %}<li><span>{{ h.label }}</span><span>{{ h.text }}</span></li>{% endfor %}</ul>
+    <p class="small">Opening hours may vary for private events, selected sports screenings and seasonal dates. Check <a href="/whats-on/">What's On</a> or contact the team when planning a specific visit.</p>
+  </div>
+  <div class="contact-card">
+    <p class="eyebrow">Get in touch</p>
+    <p class="display-s"><a href="tel:{{ venue.phone_tel }}">{{ venue.phone }}</a></p>
+    <p><a href="mailto:{{ venue.email }}">{{ venue.email }}</a></p>
+    <p><a href="{{ venue.socials.instagram }}" rel="noopener">{{ venue.socials.instagram_handle }}</a></p>
+  </div>
+</section>
+
+<section class="wrap map-row">
+  <div class="map">
+    <button type="button" class="map__load" data-map="{{ venue.maps_embed }}">
+      <span class="eyebrow">Map</span>
+      <span class="display-s">Show the map</span>
+      <span class="small">Loads Google Maps. Or <a href="{{ venue.maps_url }}" rel="noopener">open it in your maps app</a>.</span>
+    </button>
+  </div>
+  <div class="getting-here">
+    <h2 class="display-m">Getting here</h2>
+    <p>Moonshine is located on High Street in the heart of Leicester city centre.</p>
+    <dl class="travel">
+      <div><dt>By train</dt><dd>Leicester Railway Station is approximately a 15-minute walk from the venue, making us an easy destination whether you're visiting from across the city or further afield.</dd></div>
+      <div><dt>By car</dt><dd>The closest parking is available at Highcross Rooftop Car Park, just a short walk from Moonshine. Additional city centre parking is also available nearby.</dd></div>
+      <div><dt>By bus</dt><dd>St Margaret's Bus Station is approximately a 10-minute walk away, with regular services connecting Leicester and the surrounding areas.</dd></div>
+      <div><dt>Finding us</dt><dd>Our entrance is located on High Street. Look out for the Moonshine signage and step inside to discover Leicester's iconic speakeasy.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="band band--ink" id="enquiry" aria-labelledby="form-h">
+  <div class="wrap split split--top">
+    <div>
+      <p class="eyebrow">Send a message</p>
+      <h2 id="form-h" class="display-l">Tell us what you need</h2>
+      <p class="lede">Tell us what you need help with and choose the most relevant enquiry type so your message reaches the right person.</p>
+      <p class="small">We will use your details to respond to this enquiry. Marketing consent is optional and separate.</p>
+    </div>
+    <form class="form" data-stub novalidate>
+      <div class="form__fields">
+        <div class="row">
+          <label>Name<input type="text" name="name" required autocomplete="name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email"></label>
+        </div>
+        <div class="row">
+          <label>Phone <span class="opt">(optional)</span><input type="tel" name="phone" autocomplete="tel"></label>
+          <label>Enquiry type
+            <select name="type" required>
+              <option value="">Choose one</option>
+              <option>General visit</option><option>Table booking</option><option>Bottomless Brunch</option><option>Private hire</option><option>Host an event</option><option>Accessibility</option><option>Lost property</option>
+            </select>
+          </label>
+        </div>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <label class="check"><input type="checkbox" name="consent" required> I understand Moonshine will use these details to respond to my enquiry.</label>
+        <label class="check"><input type="checkbox" name="marketing"> Keep me posted about new artists and special events. <span class="opt">(optional)</span></label>
+        <p><button class="btn btn--red" type="submit">Send enquiry</button></p>
+      </div>
+      <p class="form__msg" hidden tabindex="-1">Your message has reached the Moonshine team.</p>
+    </form>
+  </div>
+</section>
+{% endblock %}

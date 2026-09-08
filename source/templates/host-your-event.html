@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block body_class %}page-host{% endblock %}
+{% block header_class %} site-header--overlay{% endblock %}
+
+{% block content %}
+<section class="hero hero--page">
+  <div class="hero__media">{{ m.pic('ig-guitar-stage', sizes='100vw', priority=true) }}</div>
+  <div class="hero__content hero__content--left">
+    <p class="eyebrow">Host Your Event</p>
+    <h1 class="display-xl">Bring us<br>the idea.</h1>
+    <p class="lede">Some of Moonshine's best nights begin with someone asking, "What if we tried this?"</p>
+    <div class="hero__actions hero__actions--left">{{ m.btn('Pitch your event', '#pitch', 'red') }}</div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap wrap--narrow">
+    <p class="lede">If you have a public-facing event you want to bring to life, we would love to hear it. Music, spoken word, comedy, creative workshops, paint and sip evenings, community gatherings, launches and ideas that do not fit neatly into a category are all welcome.</p>
+    <p class="lede">Thursday evenings are particularly well suited to new concepts and collaborations, giving promoters, performers and organisers space to build something distinctive with the Moonshine team.</p>
+  </div>
+</section>
+
+<section class="band band--ink" aria-labelledby="ideas">
+  <div class="wrap split split--top">
+    <div><p class="eyebrow">Ideas that belong here</p><h2 id="ideas" class="display-l">What we welcome</h2></div>
+    <ul class="checks checks--2">
+      <li>Live music and acoustic sessions.</li>
+      <li>Open mic, spoken word and poetry.</li>
+      <li>Comedy, cabaret and performance.</li>
+      <li>Paint and sip evenings and creative workshops.</li>
+      <li>Listening parties and DJ concepts.</li>
+      <li>Book, product and creative launches.</li>
+      <li>Networking and community events.</li>
+      <li>Quizzes, screenings and participatory nights.</li>
+      <li>A strong idea we have not listed yet.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="how">
+  <div class="wrap split split--top">
+    <div><p class="eyebrow">How collaboration works</p><h2 id="how" class="display-l">Four steps</h2></div>
+    <ol class="steps">
+      <li><strong>Tell us the idea</strong> - the format, audience, preferred date and what makes the event special.</li>
+      <li><strong>We consider the fit</strong> - room, timing, capacity, technical needs and how Moonshine can support it.</li>
+      <li><strong>We shape the plan together</strong> - responsibilities, ticketing, promotion, production and hospitality.</li>
+      <li><strong>We open the doors</strong> - with a clear guest journey and a shared plan for the night.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="band band--red" id="pitch" aria-labelledby="pitch-h">
+  <div class="wrap split split--top">
+    <div>
+      <p class="eyebrow">What to include in your pitch</p>
+      <h2 id="pitch-h" class="display-l">Share your idea</h2>
+      <ul class="checks">
+        <li>A concise description of the event.</li>
+        <li>Your preferred date or date range.</li>
+        <li>Expected audience size.</li>
+        <li>Previous examples, audience links or performer information, where relevant.</li>
+        <li>Technical, staging or furniture requirements.</li>
+        <li>Whether the event is free, ticketed or commercially sponsored.</li>
+        <li>What support you are seeking from Moonshine.</li>
+      </ul>
+      <p class="lede">You do not need to arrive with every detail solved. Start with the idea, and we will tell you whether Moonshine can be the right home for it.</p>
+    </div>
+    <form class="form form--on-red" data-stub novalidate>
+      <div class="form__fields">
+        <div class="row">
+          <label>Name<input type="text" name="name" required autocomplete="name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email"></label>
+        </div>
+        <div class="row">
+          <label>Phone <span class="opt">(optional)</span><input type="tel" name="phone" autocomplete="tel"></label>
+          <label>Event name<input type="text" name="event" required></label>
+        </div>
+        <div class="row">
+          <label>Preferred date or range<input type="text" name="date" placeholder="e.g. a Thursday in October" required></label>
+          <label>Expected audience size<input type="number" name="audience" min="1" required></label>
+        </div>
+        <label>Describe the event<textarea name="message" rows="5" required></textarea></label>
+        <div class="row">
+          <label>Free, ticketed or sponsored?<select name="model" required><option value="">Choose one</option><option>Free entry</option><option>Ticketed</option><option>Commercially sponsored</option><option>Not sure yet</option></select></label>
+          <label>Link to previous examples <span class="opt">(optional)</span><input type="url" name="link" placeholder="https://"></label>
+        </div>
+        <label>Upload a deck or video <span class="opt">(optional)</span><input type="file" name="deck" accept=".pdf,.pptx,.key,video/*"></label>
+        <label class="check"><input type="checkbox" name="authority" required> I confirm I have the authority to share the materials submitted with this pitch.</label>
+        <label class="check"><input type="checkbox" name="consent" required> I understand Moonshine will use these details to respond to my pitch.</label>
+        <p><button class="btn btn--cream" type="submit">Share your idea</button></p>
+      </div>
+      <p class="form__msg" hidden tabindex="-1">Your idea has reached the Moonshine team. We will read it properly and come back to you.</p>
+    </form>
+  </div>
+</section>
+{% endblock %}

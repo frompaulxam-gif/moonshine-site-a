@@ -1,0 +1,654 @@
+{
+ "hero-bar": {
+  "w": 2048,
+  "h": 1750,
+  "alt": "Glassware hanging above the Moonshine bar, lit warm",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 410
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 769
+   },
+   {
+    "suffix": "",
+    "w": 1800,
+    "h": 1538
+   }
+  ]
+ },
+ "hero-portrait": {
+  "w": 1707,
+  "h": 2560,
+  "alt": "A singer in a sequinned dress performing at Moonshine",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 720
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1350
+   },
+   {
+    "suffix": "",
+    "w": 1707,
+    "h": 2560
+   }
+  ]
+ },
+ "bartender-pour": {
+  "w": 1000,
+  "h": 1000,
+  "alt": "A Moonshine bartender pouring a drink at the taps",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 480
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 900
+   },
+   {
+    "suffix": "",
+    "w": 1000,
+    "h": 1000
+   }
+  ]
+ },
+ "cocktails-bar": {
+  "w": 1000,
+  "h": 1000,
+  "alt": "Cocktails being poured on the Moonshine bar",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 480
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 900
+   },
+   {
+    "suffix": "",
+    "w": 1000,
+    "h": 1000
+   }
+  ]
+ },
+ "singer-red": {
+  "w": 1000,
+  "h": 1000,
+  "alt": "A singer at the microphone on the Moonshine stage, lit red",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 480
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 900
+   },
+   {
+    "suffix": "",
+    "w": 1000,
+    "h": 1000
+   }
+  ]
+ },
+ "sax-red": {
+  "w": 1000,
+  "h": 1000,
+  "alt": "A saxophonist performing on the Moonshine stage, lit red",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 480
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 900
+   },
+   {
+    "suffix": "",
+    "w": 1000,
+    "h": 1000
+   }
+  ]
+ },
+ "room-theatre": {
+  "w": 900,
+  "h": 600,
+  "alt": "The Theatre Stage at Moonshine, tables set in front of the stage",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 320
+   },
+   {
+    "suffix": "",
+    "w": 900,
+    "h": 600
+   }
+  ]
+ },
+ "room-speakeasy": {
+  "w": 900,
+  "h": 600,
+  "alt": "Booth seating in the Speakeasy Bar at Moonshine",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 320
+   },
+   {
+    "suffix": "",
+    "w": 900,
+    "h": 600
+   }
+  ]
+ },
+ "room-members": {
+  "w": 900,
+  "h": 600,
+  "alt": "Booth seating in the Members Bar at Moonshine",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 320
+   },
+   {
+    "suffix": "",
+    "w": 900,
+    "h": 600
+   }
+  ]
+ },
+ "room-sports": {
+  "w": 900,
+  "h": 600,
+  "alt": "The pool table and booths in the Sports Bar at Moonshine",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 320
+   },
+   {
+    "suffix": "",
+    "w": 900,
+    "h": 600
+   }
+  ]
+ },
+ "brunch-cheers": {
+  "w": 2000,
+  "h": 1163,
+  "alt": "Guests raising glasses of prosecco at Bottomless Brunch",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 279
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 523
+   },
+   {
+    "suffix": "",
+    "w": 1800,
+    "h": 1047
+   }
+  ]
+ },
+ "brunch-tower": {
+  "w": 600,
+  "h": 490,
+  "alt": "A grazing tower and mimosa on a table at Moonshine",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 392
+   },
+   {
+    "suffix": "",
+    "w": 600,
+    "h": 490
+   }
+  ]
+ },
+ "brunch-drinks": {
+  "w": 600,
+  "h": 800,
+  "alt": "A grazing tower with fruit and drinks at Moonshine brunch",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 640
+   },
+   {
+    "suffix": "",
+    "w": 600,
+    "h": 800
+   }
+  ]
+ },
+ "champagne": {
+  "w": 1920,
+  "h": 2560,
+  "alt": "Glasses of champagne seen from above",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 640
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1200
+   },
+   {
+    "suffix": "",
+    "w": 1800,
+    "h": 2400
+   }
+  ]
+ },
+ "slide-dj-bw": {
+  "w": 2000,
+  "h": 1375,
+  "alt": "A DJ at the turntables at Moonshine",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 330
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 619
+   },
+   {
+    "suffix": "",
+    "w": 1800,
+    "h": 1238
+   }
+  ]
+ },
+ "slide-bartender-bw": {
+  "w": 2000,
+  "h": 1375,
+  "alt": "A bartender at work behind the Moonshine bar",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 330
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 619
+   },
+   {
+    "suffix": "",
+    "w": 1800,
+    "h": 1238
+   }
+  ]
+ },
+ "slide-3-bw": {
+  "w": 2000,
+  "h": 1375,
+  "alt": "Guests at the bar at Moonshine",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 330
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 619
+   },
+   {
+    "suffix": "",
+    "w": 1800,
+    "h": 1238
+   }
+  ]
+ },
+ "ig-dj-vinyl": {
+  "w": 1440,
+  "h": 1800,
+  "alt": "A DJ holding a vinyl record in front of shelves of records at Moonshine",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 600
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1125
+   },
+   {
+    "suffix": "",
+    "w": 1440,
+    "h": 1800
+   }
+  ]
+ },
+ "ig-crowd-sing": {
+  "w": 1440,
+  "h": 1800,
+  "alt": "Guests singing along at a table at Moonshine, lit red",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 600
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1125
+   },
+   {
+    "suffix": "",
+    "w": 1440,
+    "h": 1800
+   }
+  ]
+ },
+ "ig-crowd-dance": {
+  "w": 1440,
+  "h": 1800,
+  "alt": "Guests dancing at Moonshine",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 600
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1125
+   },
+   {
+    "suffix": "",
+    "w": 1440,
+    "h": 1800
+   }
+  ]
+ },
+ "ig-guests-two": {
+  "w": 1440,
+  "h": 1800,
+  "alt": "Two guests laughing at the bar at Moonshine",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 600
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1125
+   },
+   {
+    "suffix": "",
+    "w": 1440,
+    "h": 1800
+   }
+  ]
+ },
+ "ig-guest-red": {
+  "w": 1440,
+  "h": 1800,
+  "alt": "A guest in a white top posing under red light at Moonshine",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 600
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1125
+   },
+   {
+    "suffix": "",
+    "w": 1440,
+    "h": 1800
+   }
+  ]
+ },
+ "ig-singer-stage": {
+  "w": 1440,
+  "h": 1800,
+  "alt": "A singer in a blue sequinned dress on the Moonshine stage",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 600
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1125
+   },
+   {
+    "suffix": "",
+    "w": 1440,
+    "h": 1800
+   }
+  ]
+ },
+ "ig-crowd-red": {
+  "w": 1440,
+  "h": 1800,
+  "alt": "A busy table of guests at Moonshine, lit red",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 600
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1125
+   },
+   {
+    "suffix": "",
+    "w": 1440,
+    "h": 1800
+   }
+  ]
+ },
+ "ig-group-sing": {
+  "w": 1440,
+  "h": 1800,
+  "alt": "A group of guests singing together at Moonshine",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 600
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1125
+   },
+   {
+    "suffix": "",
+    "w": 1440,
+    "h": 1800
+   }
+  ]
+ },
+ "ig-bar-bulbs": {
+  "w": 1440,
+  "h": 1800,
+  "alt": "A bartender at the Moonshine bar under filament bulbs",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 600
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1125
+   },
+   {
+    "suffix": "",
+    "w": 1440,
+    "h": 1800
+   }
+  ]
+ },
+ "ig-bar-guest": {
+  "w": 1080,
+  "h": 1350,
+  "alt": "A bartender serving a guest at the Moonshine bar",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 600
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1125
+   },
+   {
+    "suffix": "",
+    "w": 1080,
+    "h": 1350
+   }
+  ]
+ },
+ "ig-band-stage": {
+  "w": 1080,
+  "h": 1350,
+  "alt": "A band performing on the Moonshine stage in front of the Moonshine sign",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 600
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1125
+   },
+   {
+    "suffix": "",
+    "w": 1080,
+    "h": 1350
+   }
+  ]
+ },
+ "ig-singer-close": {
+  "w": 1080,
+  "h": 1350,
+  "alt": "A singer in a black dress at the microphone at Moonshine",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 600
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1125
+   },
+   {
+    "suffix": "",
+    "w": 1080,
+    "h": 1350
+   }
+  ]
+ },
+ "ig-bar-taps": {
+  "w": 1080,
+  "h": 1350,
+  "alt": "A bartender pouring at the brass beer taps at Moonshine",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 600
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1125
+   },
+   {
+    "suffix": "",
+    "w": 1080,
+    "h": 1350
+   }
+  ]
+ },
+ "ig-guitar-stage": {
+  "w": 1080,
+  "h": 1350,
+  "alt": "A guitarist performing on the Moonshine stage",
+  "variants": [
+   {
+    "suffix": "-480",
+    "w": 480,
+    "h": 600
+   },
+   {
+    "suffix": "-900",
+    "w": 900,
+    "h": 1125
+   },
+   {
+    "suffix": "",
+    "w": 1080,
+    "h": 1350
+   }
+  ]
+ }
+}
